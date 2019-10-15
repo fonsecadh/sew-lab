@@ -1,0 +1,11 @@
+/* Background image */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+body {
+    background-image: url("url.png");
+    background-repeat: no-repeat;
+    background-color: gray;
+}
