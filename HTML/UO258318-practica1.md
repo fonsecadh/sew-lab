@@ -1,6 +1,6 @@
 ---
 title: "SEW - Informe sobre la práctica de HTML5"
-author: "Hugo Fonseca Díaz (UO258318)
+author: "Hugo Fonseca Díaz (UO258318)"
 email: "UO258318@uniovi.es"
 lang: "es-ES"
 ---
@@ -39,7 +39,7 @@ Su estructura es la siguiente:
 
 - **Cabeza del documento**: Contiene diversos metadatos que dan información sobre el index, como el *charset*, el autor, una descripción y la hoja de estilos enlazada.
 - **Cuerpo del documento**.
-    - **Cabezera**: en este caso muestra un título con el texto *Los Soprano*.
+    - **Cabecera**: en este caso muestra un título con el texto *Los Soprano*.
     - **Nav**: menú del sitio web con enlaces a los otros documentos HTML5.
     - **Main**: contiene una sección con el contenido principal del index.
     - **Aside**: contiene enlaces a otros sitios web que hablan de la serie *Los Soprano*.
@@ -51,7 +51,7 @@ El resto de documentos comparten la misma estructura semántica, que es la sigui
 
 - **Cabeza del documento**: Contiene diversos metadatos que dan información sobre el documento en cuestión, como el *charset*, el autor, una descripción y la hoja de estilos enlazada.
 - **Cuerpo del documento**.
-    - **Cabezera**: en este caso muestra un título con el texto que identifica al documento.
+    - **Cabecera**: en este caso muestra un título con el texto que identifica al documento.
     - **Nav**: menú del sitio web con enlaces a los otros documentos HTML5.
     - **Main**: contiene una o varias secciones con el contenido principal del documento.
     - **Footer**: muestra dos logos que enlazan a los validadores HTML y CSS del W3C.
