@@ -4,7 +4,7 @@ author: "Hugo Fonseca Díaz (UO258318)"
 email: "UO258318@uniovi.es"
 lang: "es-ES"
 ---
-#Estructura de los archivos que componen el sitio web
+# Estructura de los archivos que componen el sitio web
 
 El sitio web está compuesto por los siguientes archivos:
 
