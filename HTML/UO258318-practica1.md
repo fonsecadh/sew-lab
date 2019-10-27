@@ -35,7 +35,7 @@ Hay dos estructuras semánticas diferentes en el sitio web.
 
 Para el documento **index.html** se ha definido una estructura diferente al resto de los documentos, ya que cuenta con un *aside* que el resto no contiene.
 
-Su estructura es la siguiente:
+Su estructura es la siguiente (Ver figura 1):
 
 - **Cabeza del documento**: Contiene diversos metadatos que dan información sobre el index, como el *charset*, el autor, una descripción y la hoja de estilos enlazada.
 - **Cuerpo del documento**.
@@ -45,14 +45,25 @@ Su estructura es la siguiente:
     - **Aside**: contiene enlaces a otros sitios web que hablan de la serie *Los Soprano*.
     - **Footer**: muestra dos logos que enlazan a los validadores HTML y CSS del W3C.
 
+![Estructura del documento *index.html*](report_multimedia/layout_index.png)
+
 ## Resto de documentos
 
-El resto de documentos comparten la misma estructura semántica, que es la siguiente:
+El resto de documentos comparten la misma estructura semántica, que es la siguiente (Ver figura 2):
 
 - **Cabeza del documento**: Contiene diversos metadatos que dan información sobre el documento en cuestión, como el *charset*, el autor, una descripción y la hoja de estilos enlazada.
 - **Cuerpo del documento**.
     - **Cabecera**: en este caso muestra un título con el texto que identifica al documento.
     - **Nav**: menú del sitio web con enlaces a los otros documentos HTML5.
     - **Main**: contiene una o varias secciones con el contenido principal del documento.
-    - **Footer**: muestra dos logos que enlazan a los validadores HTML y CSS del W3C.
+    - **Footer**: muestra dos logos que enlazan a los validadores HTML y CSS del W3C. 
+
+![Estructura del resto de documentos](report_multimedia/layout_other.png)
+
+
+# Resultado de las herramientas de validación y verificación de accesibilidad y adaptabilidad
+
+## Validador de HTML5 del W3C
+
+Como podemos observar en las siguientes imágenes, el validador de HTML5 del W3C no muestra ningún error ni advertencia.
 
