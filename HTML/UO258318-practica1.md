@@ -45,7 +45,7 @@ Su estructura es la siguiente (Ver figura 1):
     - **Aside**: contiene enlaces a otros sitios web que hablan de la serie *Los Soprano*.
     - **Footer**: muestra dos logos que enlazan a los validadores HTML y CSS del W3C.
 
-![Estructura del documento *index.html*](report_multimedia/layout-index.png)
+![Estructura del documento *index.html*](report_multimedia/layout-index.png){height=350px}
 
 ## Resto de documentos
 
@@ -58,7 +58,7 @@ El resto de documentos comparten la misma estructura semántica, que es la sigui
     - **Main**: contiene una o varias secciones con el contenido principal del documento.
     - **Footer**: muestra dos logos que enlazan a los validadores HTML y CSS del W3C. 
 
-![Estructura del resto de documentos](report_multimedia/layout-other.png)
+![Estructura del resto de documentos](report_multimedia/layout-other.png){height=350px}
 
 
 # Resultado de las herramientas de validación y verificación de accesibilidad y adaptabilidad
@@ -67,15 +67,15 @@ El resto de documentos comparten la misma estructura semántica, que es la sigui
 
 Como podemos observar en las figuras 3-11, el validador de HTML5 del W3C no muestra ningún error ni advertencia.
 
-![Validador HTML5 del W3C - *index.html*](report_multimedia/w3c-index.png)
-![Validador HTML5 del W3C - *apertura.html*](report_multimedia/w3c-apertura.png)
-![Validador HTML5 del W3C - *argumento.html*](report_multimedia/w3c-argumento.png)
-![Validador HTML5 del W3C - *concepcion.html*](report_multimedia/w3c-concepcion.png)
-![Validador HTML5 del W3C - *escenarios_localizaciones.html*](report_multimedia/w3c-escenarios_localizaciones.png)
-![Validador HTML5 del W3C - *personajes_reparto.html*](report_multimedia/w3c-personajes_reparto.png)
-![Validador HTML5 del W3C - *premios.html*](report_multimedia/w3c-premios.png)
-![Validador HTML5 del W3C - *temas.html*](report_multimedia/w3c-temas.png)
-![Validador HTML5 del W3C - *temporadas.html*](report_multimedia/w3c-temporadas.png)
+![Validador HTML5 del W3C - *index.html*](report_multimedia/w3c-index.png){height=350px}
+![Validador HTML5 del W3C - *apertura.html*](report_multimedia/w3c-apertura.png){height=350px}
+![Validador HTML5 del W3C - *argumento.html*](report_multimedia/w3c-argumento.png){height=350px}
+![Validador HTML5 del W3C - *concepcion.html*](report_multimedia/w3c-concepcion.png){height=350px}
+![Validador HTML5 del W3C - *escenarios_localizaciones.html*](report_multimedia/w3c-escenarios_localizaciones.png){height=350px}
+![Validador HTML5 del W3C - *personajes_reparto.html*](report_multimedia/w3c-personajes_reparto.png){height=350px}
+![Validador HTML5 del W3C - *premios.html*](report_multimedia/w3c-premios.png){height=350px}
+![Validador HTML5 del W3C - *temas.html*](report_multimedia/w3c-temas.png){height=350px}
+![Validador HTML5 del W3C - *temporadas.html*](report_multimedia/w3c-temporadas.png){height=350px}
 
 ## Herramienta TAW
 
@@ -88,19 +88,19 @@ Estas advertencias son:
 - **Encabezados y etiquetas**: se refiere a si los encabezados o etiquetas del documento describen el tema o propósito.
 - **Información y relaciones**: se refiere a si la información, estructura o relaciones pueden ser determinadas de forma programática o están disponibles de forma textual.
 
-![Herramienta TAW - *index.html*](report_multimedia/taw-index.png)
-![Herramienta TAW - *apertura.html*](report_multimedia/taw-apertura.png)
-![Herramienta TAW - *argumento.html*](report_multimedia/taw-argumento.png)
-![Herramienta TAW - *concepcion.html*](report_multimedia/taw-concepcion.png)
-![Herramienta TAW - *escenarios_localizaciones.html*](report_multimedia/taw-escenarios_localizaciones.png)
-![Herramienta TAW - *personajes_reparto.html*](report_multimedia/taw-personajes_reparto.png)
-![Herramienta TAW - *premios.html*](report_multimedia/taw-premios.png)
-![Herramienta TAW - *temas.html*](report_multimedia/taw-temas.png)
-![Herramienta TAW - *temporadas.html*](report_multimedia/taw-temporadas.png)
+![Herramienta TAW - *index.html*](report_multimedia/taw-index.png){height=350px}
+![Herramienta TAW - *apertura.html*](report_multimedia/taw-apertura.png){height=350px}
+![Herramienta TAW - *argumento.html*](report_multimedia/taw-argumento.png){height=350px}
+![Herramienta TAW - *concepcion.html*](report_multimedia/taw-concepcion.png){height=350px}
+![Herramienta TAW - *escenarios_localizaciones.html*](report_multimedia/taw-escenarios_localizaciones.png){height=350px}
+![Herramienta TAW - *personajes_reparto.html*](report_multimedia/taw-personajes_reparto.png){height=350px}
+![Herramienta TAW - *premios.html*](report_multimedia/taw-premios.png){height=350px}
+![Herramienta TAW - *temas.html*](report_multimedia/taw-temas.png){height=350px}
+![Herramienta TAW - *temporadas.html*](report_multimedia/taw-temporadas.png){height=350px}
 
 ## Herramienta Google Mobile Friendly
 
-Al tratarse de un sitio web con contenido principalmente textual y una hoja de estilos bastante básica, *Google Mobile-Friendly* concluye que la página es accessible para dispositivos móviles (Ver figura 21).
+Debido a que el sitio web con contenido principalmente textual y una hoja de estilos bastante básica, *Google Mobile-Friendly* concluye que la página es accessible para dispositivos móviles (Ver figura).
 
-![Google Mobile-Friendly](report_multimedia/google-mobile-friendly.png)
+![Google Mobile-Friendly](report_multimedia/google-mobile-friendly.png){height=350px}
 
