@@ -218,7 +218,7 @@ main th, main td {
  * a=0; b=0; c=1;
  * Specificity: 1 
  */
-img {
+img, video, audio {
     display: block;
     margin-left: auto;
     margin-right: auto;
