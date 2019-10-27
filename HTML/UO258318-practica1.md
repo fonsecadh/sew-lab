@@ -67,15 +67,23 @@ El resto de documentos comparten la misma estructura semántica, que es la sigui
 
 Como podemos observar en las figuras 3-11, el validador de HTML5 del W3C no muestra ningún error ni advertencia.
 
-![Validador HTML5 del W3C - *index.html*](report_multimedia/w3c-index.png){height=350px}
-![Validador HTML5 del W3C - *apertura.html*](report_multimedia/w3c-apertura.png){height=350px}
-![Validador HTML5 del W3C - *argumento.html*](report_multimedia/w3c-argumento.png){height=350px}
-![Validador HTML5 del W3C - *concepcion.html*](report_multimedia/w3c-concepcion.png){height=350px}
-![Validador HTML5 del W3C - *escenarios_localizaciones.html*](report_multimedia/w3c-escenarios_localizaciones.png){height=350px}
-![Validador HTML5 del W3C - *personajes_reparto.html*](report_multimedia/w3c-personajes_reparto.png){height=350px}
-![Validador HTML5 del W3C - *premios.html*](report_multimedia/w3c-premios.png){height=350px}
-![Validador HTML5 del W3C - *temas.html*](report_multimedia/w3c-temas.png){height=350px}
-![Validador HTML5 del W3C - *temporadas.html*](report_multimedia/w3c-temporadas.png){height=350px}
+![Validador HTML5 del W3C: *index.html*](report_multimedia/w3c-index.png){height=350px}
+
+![Validador HTML5 del W3C: *apertura.html*](report_multimedia/w3c-apertura.png){height=350px}
+
+![Validador HTML5 del W3C: *argumento.html*](report_multimedia/w3c-argumento.png){height=350px}
+
+![Validador HTML5 del W3C: *concepcion.html*](report_multimedia/w3c-concepcion.png){height=350px}
+
+![Validador HTML5 del W3C: *escenarios_localizaciones.html*](report_multimedia/w3c-escenarios_localizaciones.png){height=350px}
+
+![Validador HTML5 del W3C: *personajes_reparto.html*](report_multimedia/w3c-personajes_reparto.png){height=350px}
+
+![Validador HTML5 del W3C: *premios.html*](report_multimedia/w3c-premios.png){height=350px}
+
+![Validador HTML5 del W3C: *temas.html*](report_multimedia/w3c-temas.png){height=350px}
+
+![Validador HTML5 del W3C: *temporadas.html*](report_multimedia/w3c-temporadas.png){height=350px}
 
 ## Herramienta TAW
 
@@ -88,19 +96,49 @@ Estas advertencias son:
 - **Encabezados y etiquetas**: se refiere a si los encabezados o etiquetas del documento describen el tema o propósito.
 - **Información y relaciones**: se refiere a si la información, estructura o relaciones pueden ser determinadas de forma programática o están disponibles de forma textual.
 
-![Herramienta TAW - *index.html*](report_multimedia/taw-index.png){height=350px}
-![Herramienta TAW - *apertura.html*](report_multimedia/taw-apertura.png){height=350px}
-![Herramienta TAW - *argumento.html*](report_multimedia/taw-argumento.png){height=350px}
-![Herramienta TAW - *concepcion.html*](report_multimedia/taw-concepcion.png){height=350px}
-![Herramienta TAW - *escenarios_localizaciones.html*](report_multimedia/taw-escenarios_localizaciones.png){height=350px}
-![Herramienta TAW - *personajes_reparto.html*](report_multimedia/taw-personajes_reparto.png){height=350px}
-![Herramienta TAW - *premios.html*](report_multimedia/taw-premios.png){height=350px}
-![Herramienta TAW - *temas.html*](report_multimedia/taw-temas.png){height=350px}
-![Herramienta TAW - *temporadas.html*](report_multimedia/taw-temporadas.png){height=350px}
+![Herramienta TAW: *index.html*](report_multimedia/taw-index.png){height=350px}
+
+![Herramienta TAW: *apertura.html*](report_multimedia/taw-apertura.png){height=350px}
+
+![Herramienta TAW: *argumento.html*](report_multimedia/taw-argumento.png){height=350px}
+
+![Herramienta TAW: *concepcion.html*](report_multimedia/taw-concepcion.png){height=350px}
+
+![Herramienta TAW: *escenarios_localizaciones.html*](report_multimedia/taw-escenarios_localizaciones.png){height=350px}
+
+![Herramienta TAW: *personajes_reparto.html*](report_multimedia/taw-personajes_reparto.png){height=350px}
+
+![Herramienta TAW: *premios.html*](report_multimedia/taw-premios.png){height=350px}
+
+![Herramienta TAW: *temas.html*](report_multimedia/taw-temas.png){height=350px}
+
+![Herramienta TAW: *temporadas.html*](report_multimedia/taw-temporadas.png){height=350px}
 
 ## Herramienta Google Mobile Friendly
 
-Debido a que el sitio web con contenido principalmente textual y una hoja de estilos bastante básica, *Google Mobile-Friendly* concluye que la página es accessible para dispositivos móviles (Ver figura).
+Debido a que el sitio web tiene contenido principalmente textual y una hoja de estilos bastante básica, *Google Mobile-Friendly* concluye que la mayoría de las páginas son accessibles para dispositivos móviles. Sin embargo, los documentos *escenarios_localizaciones.html* y *temporadas.html* no son accesibles ya que hay problemas con la hoja de estilos. 
 
-![Google Mobile-Friendly](report_multimedia/google-mobile-friendly.png){height=350px}
+En el caso de *escenarios_localizaciones.html* el problema viene dado por una imagen mostrada cuyo tamaño es superior al resto de la página, lo que provoca que no se vea adecuadamente. Esto se arreglaría modificando la hoja de estilos css para corregir el tamaño de dicha imagen en relación al resto de la página.
+
+En el otro caso, el de *temporadas.html*, el error viene dado por el tamaño de letra de las columnas de la tabla mostrada en ese documento. Como en el anterior, el error se solventaría modificando el tamaño de letra de las columnas de dicha tabla.
+
+ (Ver figuras 21-29).
+
+![Google Mobile-Friendly: *index.html*](report_multimedia/gmf-index.png){height=350px}
+
+![Google Mobile-Friendly: *apertura.html*](report_multimedia/gmf-apertura.png){height=350px}
+
+![Google Mobile-Friendly: *argumento.html*](report_multimedia/gmf-argumento.png){height=350px}
+
+![Google Mobile-Friendly: *concepcion.html*](report_multimedia/gmf-concepcion.png){height=350px}
+
+![Google Mobile-Friendly: *escenarios_localizaciones.html*](report_multimedia/gmf-escenarios_localizaciones.png){height=350px}
+
+![Google Mobile-Friendly: *personajes_reparto.html*](report_multimedia/gmf-personajes_reparto.png){height=350px}
+
+![Google Mobile-Friendly: *premios.html*](report_multimedia/gmf-premios.png){height=350px}
+
+![Google Mobile-Friendly: *temas.html*](report_multimedia/gmf-temas.png){height=350px}
+
+![Google Mobile-Friendly: *temporadas.html*](report_multimedia/gmf-temporadas.png){height=350px}
 
