@@ -1,0 +1,59 @@
+/* Layout for the index html file */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+body {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 3fr, 3fr, 1fr;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main sidebar"
+        "footer footer footer";
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+header {
+    grid-area: header;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+nav {
+    grid-area: nav;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+main {
+    grid-area: main;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+aside {
+    grid-area: sidebar;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+footer {
+    grid-area: footer;
+}
+
+
+
