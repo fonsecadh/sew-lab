@@ -178,7 +178,7 @@ p {
  * a=0; b=1; c=1;
  * Specificity: 11 
  */
-a:visited {
+a:hover {
     color: #5982c1;
 }
 
@@ -192,22 +192,22 @@ a:link {
 
 
 
-/* Lists and Tables */
+/* Aside */
 
 /* 
- * a=0; b=0; c=2;
- * Specificity: 2 
+ * a=0; b=1; c=2;
+ * Specificity: 12 
  */
-main li, main dt, main dd {
-    color: silver;
+aside a:link {
+    color: #faa605;
 }
 
 /* 
- * a=0; b=0; c=2;
- * Specificity: 2 
+ * a=0; b=1; c=2;
+ * Specificity: 12 
  */
-main th, main td {
-    color: silver;
+aside a:hover {
+    color: #bb841a;
 }
 
 
@@ -226,5 +226,27 @@ img, video, audio {
     height: auto;
     float: left;
     padding: 1em; 
+}
+
+
+
+/* Menu */
+
+/* 
+ * a=0; b=1; c=2;
+ * Specificity: 12 
+ */
+nav a:link {
+    text-decoration: none;
+    color: #97bef9;
+}
+
+/* 
+ * a=0; b=1; c=2;
+ * Specificity: 12 
+ */
+nav a:hover {
+    text-decoration: none;
+    color: #5982c1;
 }
 
