@@ -65,5 +65,42 @@ El resto de documentos comparten la misma estructura semántica, que es la sigui
 
 ## Validador de HTML5 del W3C
 
-Como podemos observar en las siguientes imágenes, el validador de HTML5 del W3C no muestra ningún error ni advertencia.
+Como podemos observar en las figuras 3-11, el validador de HTML5 del W3C no muestra ningún error ni advertencia.
+
+![Validador HTML5 del W3C - *index.html*](report_multimedia/w3c-index.png)
+![Validador HTML5 del W3C - *apertura.html*](report_multimedia/w3c-apertura.png)
+![Validador HTML5 del W3C - *argumento.html*](report_multimedia/w3c-argumento.png)
+![Validador HTML5 del W3C - *concepcion.html*](report_multimedia/w3c-concepcion.png)
+![Validador HTML5 del W3C - *escenarios_localizaciones.html*](report_multimedia/w3c-escenarios_localizaciones.png)
+![Validador HTML5 del W3C - *personajes_reparto.html*](report_multimedia/w3c-personajes_reparto.png)
+![Validador HTML5 del W3C - *premios.html*](report_multimedia/w3c-premios.png)
+![Validador HTML5 del W3C - *temas.html*](report_multimedia/w3c-temas.png)
+![Validador HTML5 del W3C - *temporadas.html*](report_multimedia/w3c-temporadas.png)
+
+## Herramienta TAW
+
+La herramienta TAW muestra varias advertencias en cada documento HTML (Ver figuras 12-20). Estas advertencias están relacionadas con el contenido del documento y son difíciles de detectar por una máquina, por lo que TAW recomienda revisarlas manualmente para observar si se cumplen o no.
+
+Estas advertencias son:
+
+- **Contenido no textual**: se refiere a si los elementos no textuales del documento HTML tienen un texto alternativo explicando el contenido mostrado.
+- **Páginas tituladas**: se refiere a si los documentos tienen algún título que defina su tema o propósito.
+- **Encabezados y etiquetas**: se refiere a si los encabezados o etiquetas del documento describen el tema o propósito.
+- **Información y relaciones**: se refiere a si la información, estructura o relaciones pueden ser determinadas de forma programática o están disponibles de forma textual.
+
+![Herramienta TAW - *index.html*](report_multimedia/taw-index.png)
+![Herramienta TAW - *apertura.html*](report_multimedia/taw-apertura.png)
+![Herramienta TAW - *argumento.html*](report_multimedia/taw-argumento.png)
+![Herramienta TAW - *concepcion.html*](report_multimedia/taw-concepcion.png)
+![Herramienta TAW - *escenarios_localizaciones.html*](report_multimedia/taw-escenarios_localizaciones.png)
+![Herramienta TAW - *personajes_reparto.html*](report_multimedia/taw-personajes_reparto.png)
+![Herramienta TAW - *premios.html*](report_multimedia/taw-premios.png)
+![Herramienta TAW - *temas.html*](report_multimedia/taw-temas.png)
+![Herramienta TAW - *temporadas.html*](report_multimedia/taw-temporadas.png)
+
+## Herramienta Google Mobile Friendly
+
+Al tratarse de un sitio web con contenido principalmente textual y una hoja de estilos bastante básica, *Google Mobile-Friendly* concluye que la página es accessible para dispositivos móviles (Ver figura 21).
+
+![Google Mobile-Friendly](report_multimedia/google-mobile-friendly.png)
 
