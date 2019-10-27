@@ -88,7 +88,16 @@ p::first-letter {
  * a=0; b=0; c=1;
  * Specificity: 1 
  */
-h1,h2,h3,h4,h5,h6 {
+h1 {
+    color: #858596;
+    background-color: #1b1b23;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h2,h3,h4,h5,h6 {
     color: #bb841a;
     background-color: #1b1b23;
 }
@@ -118,11 +127,38 @@ body {
  * a=0; b=0; c=1;
  * Specificity: 1 
  */
-h1,h2,h3,h4,h5,h6 {
+h1 {
     margin: 1em 2em;
     padding: 1em;
     text-align: center;
     text-transform: uppercase;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h2,h3,h4,h5,h6 {
+    margin: 1em 1em;
+    padding: 1em;
+    text-align: initial;
+    text-transform: uppercase;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+nav {
+    text-align: center;
+}
+
+/* 
+ * a=0; b=0; c=2;
+ * Specificity: 2 
+ */
+nav h2 {
+    text-align: center;
 }
 
 /* 
@@ -188,5 +224,7 @@ img {
     margin-right: auto;
     max-width: 100%;
     height: auto;
+    float: left;
+    padding: 1em; 
 }
 
