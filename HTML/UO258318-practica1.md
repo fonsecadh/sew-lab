@@ -45,7 +45,7 @@ Su estructura es la siguiente (Ver figura 1):
     - **Aside**: contiene enlaces a otros sitios web que hablan de la serie *Los Soprano*.
     - **Footer**: muestra dos logos que enlazan a los validadores HTML y CSS del W3C.
 
-![Estructura del documento *index.html*](report_multimedia/layout_index.png)
+![Estructura del documento *index.html*](report_multimedia/layout-index.png)
 
 ## Resto de documentos
 
@@ -58,7 +58,7 @@ El resto de documentos comparten la misma estructura semántica, que es la sigui
     - **Main**: contiene una o varias secciones con el contenido principal del documento.
     - **Footer**: muestra dos logos que enlazan a los validadores HTML y CSS del W3C. 
 
-![Estructura del resto de documentos](report_multimedia/layout_other.png)
+![Estructura del resto de documentos](report_multimedia/layout-other.png)
 
 
 # Resultado de las herramientas de validación y verificación de accesibilidad y adaptabilidad
