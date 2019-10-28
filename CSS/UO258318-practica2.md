@@ -108,6 +108,23 @@ Estas advertencias son:
 
 ## Herramienta Google Mobile Friendly
 
+Hemos corregido todos los problemas encontrados en la anterior práctica debido al css, por lo que ahora Google Mobile-Friendly concluye que todos los documentos del sitio web tienen adaptabilidad para dispositivos móviles (Ver figuras 16-24).
 
+![Google Mobile-Friendly: *index.html*](report_multimedia/gmf-index.png){height=350px}
 
+![Google Mobile-Friendly: *apertura.html*](report_multimedia/gmf-apertura.png){height=350px}
+
+![Google Mobile-Friendly: *argumento.html*](report_multimedia/gmf-argumento.png){height=350px}
+
+![Google Mobile-Friendly: *concepcion.html*](report_multimedia/gmf-concepcion.png){height=350px}
+
+![Google Mobile-Friendly: *escenarios_localizaciones.html*](report_multimedia/gmf-escenarios_localizaciones.png){height=350px}
+
+![Google Mobile-Friendly: *personajes_reparto.html*](report_multimedia/gmf-personajes_reparto.png){height=350px}
+
+![Google Mobile-Friendly: *premios.html*](report_multimedia/gmf-premios.png){height=350px}
+
+![Google Mobile-Friendly: *temas.html*](report_multimedia/gmf-temas.png){height=350px}
+
+![Google Mobile-Friendly: *temporadas.html*](report_multimedia/gmf-temporadas.png){height=350px}
 
