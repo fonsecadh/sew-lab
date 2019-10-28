@@ -67,5 +67,47 @@ No hay cambios entre el HTML de esta práctica y el de la anterior, por lo que s
 
 ## Validador de CSS del W3c
 
-Como podemos observar en las figuras 3-5, el validador de CSS del W3C no muestra ningún error ni advertencia.
+Como podemos observar en las figuras 3-6, el validador de CSS del W3C no muestra ningún error. Sin embargo en la hoja de estilos *estilo.css* podemos observar advertencias sobre la definición de los colores, que según el guión de la práctica no son necesarios de corregir.
+
+![Validador CSS del W3C: *estilo.css*](report_multimedia/w3c-estilo.png){height=350px}
+
+![Validador CSS del W3C: Warnings sobre la definición de colores de *estilo.css*](report_multimedia/w3c-estilo-warning.png){height=350px}
+
+![Validador CSS del W3C: *layout-index.css*](report_multimedia/w3c-layout-index.png){height=350px}
+
+![Validador CSS del W3C: *layout-other.css*](report_multimedia/w3c-layout-other.png){height=350px}
+
+## Herramienta TAW
+
+La herramienta TAW muestra varias advertencias en cada documento HTML (Ver figuras 7-15). Estas advertencias están relacionadas con el contenido del documento y son difíciles de detectar por una máquina, por lo que TAW recomienda revisarlas manualmente para observar si se cumplen o no.
+
+Estas advertencias son:
+
+- **Contenido no textual**: se refiere a si los elementos no textuales del documento HTML tienen un texto alternativo explicando el contenido mostrado.
+- **Páginas tituladas**: se refiere a si los documentos tienen algún título que defina su tema o propósito.
+- **Encabezados y etiquetas**: se refiere a si los encabezados o etiquetas del documento describen el tema o propósito.
+- **Información y relaciones**: se refiere a si la información, estructura o relaciones pueden ser determinadas de forma programática o están disponibles de forma textual.
+
+![Herramienta TAW: *index.html*](report_multimedia/taw-index.png){height=350px}
+
+![Herramienta TAW: *apertura.html*](report_multimedia/taw-apertura.png){height=350px}
+
+![Herramienta TAW: *argumento.html*](report_multimedia/taw-argumento.png){height=350px}
+
+![Herramienta TAW: *concepcion.html*](report_multimedia/taw-concepcion.png){height=350px}
+
+![Herramienta TAW: *escenarios_localizaciones.html*](report_multimedia/taw-escenarios_localizaciones.png){height=350px}
+
+![Herramienta TAW: *personajes_reparto.html*](report_multimedia/taw-personajes_reparto.png){height=350px}
+
+![Herramienta TAW: *premios.html*](report_multimedia/taw-premios.png){height=350px}
+
+![Herramienta TAW: *temas.html*](report_multimedia/taw-temas.png){height=350px}
+
+![Herramienta TAW: *temporadas.html*](report_multimedia/taw-temporadas.png){height=350px}
+
+## Herramienta Google Mobile Friendly
+
+
+
 

@@ -67,9 +67,18 @@ h6 {
  * a=0; b=0; c=1;
  * Specificity: 1 
  */
-p,ol,ul,dl,table {
+p,ol,ul,dl {
     font-family: sans-serif;
     font-size: 1em;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+table {
+    font-family: sans-serif;
+    font-size: 2em;
 }
 
 /* 
