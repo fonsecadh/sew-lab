@@ -15,13 +15,15 @@ Hay un total de 3 hojas de estilo CSS que definen el aspecto del sitio web. Aqu�
 
 # Aspecto general
 
-El sitio web cuenta con los siguiente elementos:
+El sitio web cuenta con los siguiente elementos (Ver figura 1):
 
 - **Título**: El título *Los Soprano* que se muestra en cada documento arriba en el centro.
 - **Menú**: El menú del sitio web, por el que se accede al resto de documentos.
 - **Contenido principal**: Contenido de la página actual del sitio, con título propio y texto, multimedia, o enlaces a otras páginas.
 - **Botones de validación**: Abajo a la izquierda se encuentran los botones que indican que el sitio contiene HTML5 y CSS válido.
 - **Colores**: Los colores del sitio web son bastante simples, fondo gris muy oscuro, título principal gris claro, títulos secundarios dorados, elementos del menú azules y enlaces de la barra lateral (si existe) dorados.
+
+![Estructura del sitio web](report_multimedia/website-layout.png){height=350px}
 
 
 # Disposición de los elementos
@@ -32,7 +34,7 @@ Tenemos dos disposiciones principales:
 
 Para el documento **index.html** se ha definido una estructura diferente al resto de los documentos, ya que cuenta con un *aside* que el resto no contiene.
 
-Su estructura es la siguiente (Ver figura 1):
+Su estructura es la siguiente (Ver figura 2):
 
 - **Cabeza del documento**: Contiene diversos metadatos que dan información sobre el index, como el *charset*, el autor, una descripción y la hoja de estilos enlazada.
 - **Cuerpo del documento**.
@@ -46,7 +48,7 @@ Su estructura es la siguiente (Ver figura 1):
 
 ## Resto de documentos
 
-El resto de documentos comparten la misma estructura semántica, que es la siguiente (Ver figura 2):
+El resto de documentos comparten la misma estructura semántica, que es la siguiente (Ver figura 3):
 
 - **Cabeza del documento**: Contiene diversos metadatos que dan información sobre el documento en cuestión, como el *charset*, el autor, una descripción y la hoja de estilos enlazada.
 - **Cuerpo del documento**.
@@ -67,7 +69,7 @@ No hay cambios entre el HTML de esta práctica y el de la anterior, por lo que s
 
 ## Validador de CSS del W3c
 
-Como podemos observar en las figuras 3-6, el validador de CSS del W3C no muestra ningún error. Sin embargo en la hoja de estilos *estilo.css* podemos observar advertencias sobre la definición de los colores, que según el guión de la práctica no son necesarios de corregir.
+Como podemos observar en las figuras 4-7, el validador de CSS del W3C no muestra ningún error. Sin embargo en la hoja de estilos *estilo.css* podemos observar advertencias sobre la definición de los colores, que según el guión de la práctica no son necesarios de corregir.
 
 ![Validador CSS del W3C: *estilo.css*](report_multimedia/w3c-estilo.png){height=350px}
 
@@ -79,7 +81,7 @@ Como podemos observar en las figuras 3-6, el validador de CSS del W3C no muestra
 
 ## Herramienta TAW
 
-La herramienta TAW muestra varias advertencias en cada documento HTML (Ver figuras 7-15). Estas advertencias están relacionadas con el contenido del documento y son difíciles de detectar por una máquina, por lo que TAW recomienda revisarlas manualmente para observar si se cumplen o no.
+La herramienta TAW muestra varias advertencias en cada documento HTML (Ver figuras 8-16). Estas advertencias están relacionadas con el contenido del documento y son difíciles de detectar por una máquina, por lo que TAW recomienda revisarlas manualmente para observar si se cumplen o no.
 
 Estas advertencias son:
 
@@ -108,7 +110,7 @@ Estas advertencias son:
 
 ## Herramienta Google Mobile Friendly
 
-Hemos corregido todos los problemas encontrados en la anterior práctica debido al css, por lo que ahora Google Mobile-Friendly concluye que todos los documentos del sitio web tienen adaptabilidad para dispositivos móviles (Ver figuras 16-24).
+Hemos corregido todos los problemas encontrados en la anterior práctica debido al css, por lo que ahora Google Mobile-Friendly concluye que todos los documentos del sitio web tienen adaptabilidad para dispositivos móviles (Ver figuras 17-25).
 
 ![Google Mobile-Friendly: *index.html*](report_multimedia/gmf-index.png){height=350px}
 
