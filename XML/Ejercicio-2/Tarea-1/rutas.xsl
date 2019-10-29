@@ -101,7 +101,7 @@
 								<xsl:for-each select="fotografias//fotografia">									
 									<li>
 										<img>											
-                                            <xsl:attribute name="href">
+                                            <xsl:attribute name="src">
                                                 <xsl:value-of select="@src"/>
                                             </xsl:attribute>
                                             <xsl:value-of select="@titulo"/>                                        
