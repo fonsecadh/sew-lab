@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="html" version="5.0" encoding="utf-8" indent="yes"/>
-<xsl:template match="/">
+<xsl:template match="rutas">
 <html>
 	<head>
 		<title>Ejercicio 2 Tarea 1</title>
