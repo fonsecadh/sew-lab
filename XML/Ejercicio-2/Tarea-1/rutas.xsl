@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="html" version="5.0" encoding="utf-8" indent="yes"/>
-<xsl:template match="rutas">
+<xsl:template match="/">
 <html>
 	<head>
 		<title>Ejercicio 2 Tarea 1</title>
@@ -62,7 +62,13 @@
 					</p>
 					<ul class="referencias">
 						<xsl:for-each select="referencias//referencia">
-							<li>
+                            <li>
+                                <a>
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="@url"/>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="."/>
+                                </a>                                
 								<xsl:value-of select="."/>
 								<span class="url">
 									<xsl:text> (</xsl:text>
