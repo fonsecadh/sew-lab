@@ -106,8 +106,11 @@
 							<ul class="fotografias">
 								<xsl:for-each select="fotografias//fotografia">									
 									<li>
-										<img src="{@src}">
-											<xsl:value-of select="@titulo"/>
+										<img>											
+                                            <xsl:attribute name="href">
+                                                <xsl:value-of select="@src"/>
+                                            </xsl:attribute>
+                                            <xsl:value-of select="@titulo"/>                                        
 										</img>
 									</li>
 								</xsl:for-each>
@@ -118,10 +121,13 @@
 							<ul class="videos">
 								<xsl:for-each select="videos//video">									
 									<li>
-										<a href="{@src}">
-											<xsl:value-of select="@titulo"/>
-										</a>
-									</li>
+								        <a>
+                                            <xsl:attribute name="href">
+                                                <xsl:value-of select="@src"/>
+                                            </xsl:attribute>
+                                            <xsl:value-of select="@titulo"/>
+                                        </a>
+                                    </li>
 								</xsl:for-each>
 							</ul>	
 						</section>
