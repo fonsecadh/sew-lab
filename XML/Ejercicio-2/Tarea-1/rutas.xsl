@@ -69,12 +69,6 @@
                                     </xsl:attribute>
                                     <xsl:value-of select="."/>
                                 </a>                                
-								<xsl:value-of select="."/>
-								<span class="url">
-									<xsl:text> (</xsl:text>
-									<xsl:value-of select="@url"/>
-									<xsl:text>) </xsl:text>
-								</span>
 							</li>
 						</xsl:for-each>
 					</ul>
