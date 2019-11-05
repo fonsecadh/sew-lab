@@ -6,7 +6,7 @@
 <xsl:template match="/">
 	<kml>
 		<Document>
-			<xsl:for-each select="rutas//ruta">
+			<xsl:for-each select="rutas/ruta">
 				<Placemark>
 					<name>
 						<xsl:value-of select="nombre"/>
@@ -17,13 +17,13 @@
 						<coordinates>
 							<xsl:value-of select="coordenadas//@longitud"/>
 							<xsl:text>,</xsl:text>
-							<xsl:value-of select="coordenadas//@altitud"/>
+							<xsl:value-of select="coordenadas//@latitud"/>
 							<xsl:text>,</xsl:text>
 							<xsl:value-of select="coordenadas//@altitud"/>
-							<xsl:for-each select="hitos//hito">
+							<xsl:for-each select="hitos/hito">
 								<xsl:value-of select="coordenadas//@longitud"/>
 								<xsl:text>,</xsl:text>
-								<xsl:value-of select="coordenadas//@altitud"/>
+								<xsl:value-of select="coordenadas//@latitud"/>
 								<xsl:text>,</xsl:text>
 								<xsl:value-of select="coordenadas//@altitud"/>
 							</xsl:for-each>
