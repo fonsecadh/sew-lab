@@ -5,7 +5,8 @@
 <xsl:output method="xml" encoding="UTF-8" standalone="yes"/>
 <xsl:template match="/">
 	<svg>
-		<xsl:for-each select="rutas//ruta">
+        <xsl:for-each select="rutas//ruta">
+            <!-- This part below is wrong -->
 			<xsl:variable name="inicioRuta" select="{distanciaHitoAnterior}, {coordenadas//@altitud}"/>	
 			<xsl:for-each select="hitos//hito">					
 			</xsl:for-each>
