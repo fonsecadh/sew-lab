@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<logs>
+    <log>
+        <fecha>2019-11-26</fecha>
+        <hora>14:24:17</hora>
+        <tipo>Database Error</tipo>
+        <contenido>Cannot process request. Not enough resources to process request</contenido>
+    </log>
+    <log>
+        <fecha>2019-11-25</fecha>
+        <hora>23:24:54</hora>
+        <tipo>Server Error</tipo>
+        <contenido>503 Service Unavailable</contenido>
+    </log>
+    <log>
+        <fecha>2019-11-23</fecha>
+        <hora>15:19:22</hora>
+        <tipo>Database Error</tipo>
+        <contenido>Cannot process create or update request. Too many create or update operations in progress for subscription 15764258</contenido>
+    </log>
+    <log>
+        <fecha>2019-11-23</fecha>
+        <hora>06:56:12</hora>
+        <tipo>Database Error</tipo>
+        <contenido>Database copy failed. Either the source or target database does not exist</contenido>
+    </log>
+    <log>
+        <fecha>2019-11-20</fecha>
+        <hora>12:37:34</hora>
+        <tipo>Server Error</tipo>
+        <contenido>501 Not Implemented</contenido>
+    </log>
+</logs>
