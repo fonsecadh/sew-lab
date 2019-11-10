@@ -11,16 +11,16 @@
                 <!-- Ruta con índice específico -->
                 <xsl:variable name="selRuta" select="rutas/ruta[1]"/>
                 <xsl:text>0,</xsl:text>
-                <xsl:value-of select="$selRuta/coordernadas/@altitud"/>
+                <xsl:value-of select="$selRuta/coordenadas/@altitud"/>
                 <xsl:text> </xsl:text>
                 <xsl:for-each select="$selRuta/hitos/hito">
                     <xsl:value-of select="distanciaHitoAnterior"/>
                     <xsl:text>,</xsl:text>
-                    <xsl:value-of select="coordernadas/@altitud"/>
+                    <xsl:value-of select="coordenadas/@altitud"/>
                     <xsl:text> </xsl:text>
                 </xsl:for-each>
                 <xsl:text>0,</xsl:text>
-                <xsl:value-of select="$selRuta/coordernadas/@altitud"/>
+                <xsl:value-of select="$selRuta/coordenadas/@altitud"/>
                 <xsl:text> </xsl:text>
             </xsl:attribute>
         </polyline>
