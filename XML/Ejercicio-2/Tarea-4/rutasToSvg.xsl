@@ -4,7 +4,7 @@
     xmlns:svg="http://www.w3.org/2000/svg">
 <xsl:output method="xml" encoding="UTF-8" standalone="yes"/>
 <xsl:template match="/">
-    <svg>
+    <svg height="1000">
 
         <polyline style="fill:white;stroke:red;stroke-width:4">
             <xsl:attribute name="points">                
