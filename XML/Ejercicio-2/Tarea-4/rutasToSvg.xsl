@@ -31,7 +31,7 @@
                 <xsl:attribute name="x">
                     <xsl:value-of select="distanciaHitoAnterior"/>
                 </xsl:attribute>
-                <xsl:value-of select"nombre"/>
+                <xsl:value-of select="nombre"/>
             </text>
         </xsl:for-each>
 
