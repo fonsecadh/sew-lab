@@ -1,0 +1,11 @@
+Hugo Fonseca Díaz - UO258318
+
+LogFilter - Un programa básico de terminal que permite filtrar logs por
+su tipo o fecha.
+
+- Lenguaje de programación utilizado: python 3.7.4
+- Archivos de prueba utilizados: exampleLogs.xml
+- Instrucciones de uso:
+    Si ejecuta el programa con la flag -h o --help (./logfilter.py -h)
+    se le mostrará la ayuda con las instrucciones de uso del programa.
+- Licencia: GNU General Public License Version 3
