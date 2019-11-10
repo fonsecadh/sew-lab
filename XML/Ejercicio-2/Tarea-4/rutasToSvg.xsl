@@ -6,19 +6,22 @@
 <xsl:template match="/">
     <svg>
 
-        <polyline>
+        <polyline style="fill:white;stroke:red;stroke-width:4">
             <xsl:attribute name="points">                
                 <!-- Ruta con índice específico -->
                 <xsl:variable name="selRuta" select="rutas/ruta[1]"/>
                 <xsl:text>0,</xsl:text>
-                <xsl:value-of select="$selRuta/coordernadas//@altitud"/>
+                <xsl:value-of select="$selRuta/coordernadas/@altitud"/>
                 <xsl:text> </xsl:text>
                 <xsl:for-each select="$selRuta/hitos/hito">
                     <xsl:value-of select="distanciaHitoAnterior"/>
                     <xsl:text>,</xsl:text>
-                    <xsl:value-of select="coordernadas//@altitud"/>
+                    <xsl:value-of select="coordernadas/@altitud"/>
                     <xsl:text> </xsl:text>
                 </xsl:for-each>
+                <xsl:text>0,</xsl:text>
+                <xsl:value-of select="$selRuta/coordernadas/@altitud"/>
+                <xsl:text> </xsl:text>
             </xsl:attribute>
         </polyline>
 
