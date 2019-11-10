@@ -1,0 +1,14 @@
+<logs>
+    <log>
+        <fecha>2019-11-25</fecha>
+        <hora>23:24:54</hora>
+        <tipo>Server Error</tipo>
+        <contenido>503 Service Unavailable</contenido>
+    </log>
+    <log>
+        <fecha>2019-11-20</fecha>
+        <hora>12:37:34</hora>
+        <tipo>Server Error</tipo>
+        <contenido>501 Not Implemented</contenido>
+    </log>
+</logs>

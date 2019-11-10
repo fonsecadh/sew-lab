@@ -1,0 +1,8 @@
+<logs>
+    <log>
+        <fecha>2019-11-26</fecha>
+        <hora>14:24:17</hora>
+        <tipo>Database Error</tipo>
+        <contenido>Cannot process request. Not enough resources to process request</contenido>
+    </log>
+</logs>

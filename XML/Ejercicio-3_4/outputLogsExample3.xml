@@ -1,0 +1,20 @@
+<logs>
+    <log>
+        <fecha>2019-11-26</fecha>
+        <hora>14:24:17</hora>
+        <tipo>Database Error</tipo>
+        <contenido>Cannot process request. Not enough resources to process request</contenido>
+    </log>
+    <log>
+        <fecha>2019-11-23</fecha>
+        <hora>15:19:22</hora>
+        <tipo>Database Error</tipo>
+        <contenido>Cannot process create or update request. Too many create or update operations in progress for subscription 15764258</contenido>
+    </log>
+    <log>
+        <fecha>2019-11-23</fecha>
+        <hora>06:56:12</hora>
+        <tipo>Database Error</tipo>
+        <contenido>Database copy failed. Either the source or target database does not exist</contenido>
+    </log>
+</logs>
