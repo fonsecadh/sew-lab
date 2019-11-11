@@ -35,12 +35,12 @@ def parseXMLFile(filename):
 
 def getLineStringCoords(elem):
     # First coordinate
-    coords = str(elem.find("coordenadas").get("longitud")) + "," + str(elem.find("coordenadas").get("latitud")) + "," + str(elem.find("coordenadas").get("altitud"))
+    coords = str(elem.find("coordenadas").get("latitud")) + "," + str(elem.find("coordenadas").get("longitud")) + "," + str(elem.find("coordenadas").get("altitud"))
 
     # Other coordinates
     for hito in elem.find("hitos"):
         coords += " "
-        coords += str(hito.find("coordenadas").get("longitud")) + "," + str(hito.find("coordenadas").get("latitud")) + "," + str(hito.find("coordenadas").get("altitud"))
+        coords += str(hito.find("coordenadas").get("latitud")) + "," + str(hito.find("coordenadas").get("longitud")) + "," + str(hito.find("coordenadas").get("altitud"))
 
     # We return the coordinates
     return coords
