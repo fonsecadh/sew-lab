@@ -18,7 +18,7 @@
                     <xsl:text>,</xsl:text>
                     <xsl:value-of select="coordenadas/@altitud"/>
                 </xsl:for-each>
-                <xsl:text>0,</xsl:text>
+                <xsl:text> 0,</xsl:text>
                 <xsl:value-of select="$selRuta/coordenadas/@altitud"/>
                 <xsl:text> </xsl:text>
             </xsl:attribute>
