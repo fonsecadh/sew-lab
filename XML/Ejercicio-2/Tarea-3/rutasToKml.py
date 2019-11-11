@@ -63,7 +63,7 @@ def createKMLFile(root):
         lstrExtrude = ET.SubElement(lstr, "extrude")
         lstrExtrude.text = str(1)
         lstrTessellate = ET.SubElement(lstr, "tessellate")
-        lstrTessellate = str(1)
+        lstrTessellate.text = str(1)
         lstrCoord = ET.SubElement(lstr, "coordinates")
         lstrCoord.text = getLineStringCoords(elem)
         lstrAltMode = ET.SubElement(lstr, "altituteMode")
