@@ -68,7 +68,8 @@ def createKMLFile(root):
         lstrCoord.text = getLineStringCoords(elem)
         lstrAltMode = ET.SubElement(lstr, "altituteMode")
         lstrAltMode.text = "relativeToGround"
-
+        
+        '''
         # Style
         plmStyle = ET.SubElement(docPlacemark, "Style")
         lineStyle = ET.SubElement(plmStyle, "LineStyle")
@@ -76,6 +77,7 @@ def createKMLFile(root):
         lstyleColor.text = "#FF0000"
         lstyleWidth = ET.SubElement(lineStyle, "width")
         lstyleWidth.text = str(6)
+        '''
 
     # Writing KML document
     filename = "rutas.kml"
