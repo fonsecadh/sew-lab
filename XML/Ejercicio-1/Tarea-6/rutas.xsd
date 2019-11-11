@@ -3,9 +3,9 @@
   <xs:complexType name="coordenadasType">
     <xs:simpleContent>
       <xs:extension base="xs:string">
-        <xs:attribute type="xs:string" name="longitud" use="optional"/>
-        <xs:attribute type="xs:float" name="latitud" use="optional"/>
-        <xs:attribute type="xs:short" name="altitud" use="optional"/>
+        <xs:attribute type="xs:double" name="longitud" use="optional"/>
+        <xs:attribute type="xs:double" name="latitud" use="optional"/>
+        <xs:attribute type="xs:double" name="altitud" use="optional"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -39,7 +39,7 @@
       <xs:element type="xs:string" name="nombre"/>
       <xs:element type="xs:string" name="descripcion"/>
       <xs:element type="coordenadasType" name="coordenadas"/>
-      <xs:element type="xs:int" name="distanciaHitoAnterior"/>
+      <xs:element type="xs:double" name="distanciaHitoAnterior"/>
       <xs:element type="fotografiasType" name="fotografias"/>
       <xs:element type="videosType" name="videos" minOccurs="0"/>
     </xs:sequence>
@@ -77,7 +77,7 @@
       <xs:element type="xs:string" name="direccion_inicio"/>
       <xs:element type="coordenadasType" name="coordenadas"/>
       <xs:element type="referenciasType" name="referencias"/>
-      <xs:element type="xs:byte" name="recomendacion"/>
+      <xs:element type="xs:double" name="recomendacion"/>
       <xs:element type="hitosType" name="hitos"/>
     </xs:sequence>
   </xs:complexType>

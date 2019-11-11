@@ -1,0 +1,8 @@
+Hugo Fonseca Díaz (UO258318)
+
+Se han realizado los siguientes cambios al XML Schema autogenerado:
+
+    - Las coordenadas pasan a ser todas de tipo double
+    - La distancia respecto al hito anterior también pasa a ser un double
+    - La recomendación también pasa a ser un double
+
