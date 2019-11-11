@@ -2,7 +2,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="html" version="5.0" encoding="utf-8" indent="yes"/>
 <xsl:template match="rutas">
-<!DOCTYPE html>
 <html lang="es">
 	<head>
 		<title>Ejercicio 2 Tarea 1</title>
