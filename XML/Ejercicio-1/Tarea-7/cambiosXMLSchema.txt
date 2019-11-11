@@ -6,3 +6,8 @@ Se han realizado los siguientes cambios al XML Schema autogenerado:
     - La distancia respecto al hito anterior también pasa a ser un double
     - La recomendación también pasa a ser un double
 
+Nota: 
+No he podido cambiar el tipo de "fecha_inicio" a "date" y la "duracion" a "duration"
+ya que en mi XML no cumplen el formato estándar (YYYY-MM-DD, P20M, PT20M...) y no puede 
+especificarse otro formato distinto en el esquema XML.
+
