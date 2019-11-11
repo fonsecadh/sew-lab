@@ -104,7 +104,10 @@
                                             <xsl:attribute name="src">
                                                 <xsl:value-of select="@src"/>
                                             </xsl:attribute>
-                                            <xsl:value-of select="@titulo"/>                                        
+                                            <xsl:attribute name="alt">                                                
+                                                <xsl:value-of select="@titulo"/>
+                                            </xsl:attribute>
+                                            <xsl:value-of select="@titulo"/>
 										</img>
 									</li>
 								</xsl:for-each>
