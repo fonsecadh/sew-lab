@@ -82,15 +82,7 @@ def setSVGTextsForRoute(elem, svgHeight, elevProfile):
         svgText.set("style", "writing-mode: tb; glyph-orientation-vertical: 0;")
         svgText.text = str(hito.find("nombre").text)
     
-    # Last point    
-    svgText = ET.SubElement(elevProfile, "text")
-    svgText.set("x", str(10))
-    svgText.set("y", str(svgHeight - 400))
-    svgText.set("style", "writing-mode: tb; glyph-orientation-vertical: 0;")
-    svgText.text = str(elem.find("direccion_inicio").text)
-
-
-
+   
 def createSVGFiles(root):
     for elem in root:
         # SVG Height
