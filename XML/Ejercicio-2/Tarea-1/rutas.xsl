@@ -7,7 +7,7 @@
 		<title>Ejercicio 2 Tarea 1</title>
 		<meta name="description" content="Ejercicio 2 Tarea 1" />
 		<meta name="author" content="UO258318" />				
-		<!-- <link rel="stylesheet" type="text/css" href="rutas.css"/> -->
+		<link rel="stylesheet" type="text/css" href="rutas.css"/>
 	</head>
 	<body>
 		<header>

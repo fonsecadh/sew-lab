@@ -1,0 +1,219 @@
+/* Headers */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h1,h2,h3,h4,h5,h6 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-stretch: expanded;
+    font-style: italic;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h1 {
+    font-size: 2.5em;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h2 {
+    font-size: 2em;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h3 {
+    font-size: 1.75em;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h4 {
+    font-size: 1.5em;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h5 {
+    font-size: 1.25em;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h6 {
+    font-size: 1.1em;
+}
+
+
+
+/* Text */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+p,ol,ul,dl {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+table {
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+
+/* 
+ * a=0; b=0; c=2;
+ * Specificity: 2 
+ */
+p::first-letter {
+    font-size: 1.25em;
+}
+
+
+
+/* Color and backgrounds */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h1 {
+    color: #858596;
+    background-color: #1b1b23;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h2,h3,h4,h5,h6 {
+    color: #bb841a;
+    background-color: #1b1b23;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+p,ol,ul,dl,table {
+    color: #858596;
+    background-color: #1b1b23;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+body {
+    background-color: #1b1b23;
+}
+
+
+
+/* Padding and margin */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h1 {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h2,h3,h4,h5,h6 {
+    padding: 1em;
+    text-align: initial;
+    text-transform: uppercase;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+nav {
+    text-align: center;
+}
+
+/* 
+ * a=0; b=0; c=2;
+ * Specificity: 2 
+ */
+nav h2 {
+    text-align: center;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+p {
+    text-align: initial;
+    text-justify: auto;
+}
+
+
+
+/* Links */
+
+/* 
+ * a=0; b=1; c=1;
+ * Specificity: 11 
+ */
+a:hover {
+    color: #5982c1;
+}
+
+/* 
+ * a=0; b=1; c=1;
+ * Specificity: 11 
+ */
+a:link {
+    color: #97bef9;
+}
+
+
+
+/* Multimedia */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+img, video, audio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+    height: auto;
+    float: left;
+    padding: 1em; 
+}
+
+
