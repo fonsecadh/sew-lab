@@ -20,7 +20,8 @@
 							<xsl:value-of select="coordenadas//@latitud"/>
 							<xsl:text>,</xsl:text>
 							<xsl:value-of select="coordenadas//@altitud"/>
-							<xsl:for-each select="hitos/hito">
+                            <xsl:for-each select="hitos/hito">
+                                <xsl:text> </xsl:text>
 								<xsl:value-of select="coordenadas//@longitud"/>
 								<xsl:text>,</xsl:text>
 								<xsl:value-of select="coordenadas//@latitud"/>
@@ -32,7 +33,7 @@
 					</LineString>
 					<Style>
 						<LineStyle>
-							<color>#FF0006</color>
+							<color>#FF0000</color>
 							<width>6</width>
 						</LineStyle>
 					</Style>

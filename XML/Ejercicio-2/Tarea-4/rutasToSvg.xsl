@@ -4,7 +4,7 @@
     xmlns:svg="http://www.w3.org/2000/svg">
 <xsl:output method="xml" encoding="UTF-8" standalone="yes"/>
 <xsl:template match="/">
-    <svg height="1000">
+    <svg>
 
         <polyline style="fill:white;stroke:red;stroke-width:4">
             <xsl:attribute name="points">                
@@ -12,12 +12,11 @@
                 <xsl:variable name="selRuta" select="rutas/ruta[1]"/>
                 <xsl:text>0,</xsl:text>
                 <xsl:value-of select="$selRuta/coordenadas/@altitud"/>
-                <xsl:text> </xsl:text>
                 <xsl:for-each select="$selRuta/hitos/hito">
+                    <xsl:text> </xsl:text>
                     <xsl:value-of select="distanciaHitoAnterior"/>
                     <xsl:text>,</xsl:text>
                     <xsl:value-of select="coordenadas/@altitud"/>
-                    <xsl:text> </xsl:text>
                 </xsl:for-each>
                 <xsl:text>0,</xsl:text>
                 <xsl:value-of select="$selRuta/coordenadas/@altitud"/>

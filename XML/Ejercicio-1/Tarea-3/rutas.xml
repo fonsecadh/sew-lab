@@ -32,7 +32,7 @@
 			<descripcion>La puerta Romon es la puerta principal de acceso al santuario Fushimi Inari que vemos justo después de pasar el segundo
 			gran torii bermellón.</descripcion>
 			<coordenadas longitud="34.967107" latitud="135.772310" altitud="74"></coordenadas>
-			<distanciaHitoAnterior>160m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>160</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/fushimi_inari_01_romon_gate.jpg" titulo="Puerta Romon."></fotografia>		
@@ -45,7 +45,7 @@
 			<descripcion>En el salón principal están consagradas las cinco deidades del monte Inari. El edificio tiene decoraciones en los pasillos
 			típicas del período Azuchi-Momoyama (finales del siglo XVI) y muros de 10,6 metros de alto. Las decoraciones son coloridas y dinámicas.</descripcion>
 			<coordenadas longitud="34.967138" latitud="135.772672" altitud="72"></coordenadas>
-			<distanciaHitoAnterior>35m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>35</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/fushimi_inari_02.jpg" titulo="Salón principal Honden 01."></fotografia>
@@ -63,7 +63,7 @@
 			los favores de la deidad del santuario, creando así el famoso camino Senbon Torii o camino de las mil puertas, que cubren todo el camino desde
 			el santuario interior hasta la cima del monte Inari.</descripcion>
 			<coordenadas longitud="34.966967" latitud="135.774822" altitud="74"></coordenadas>
-			<distanciaHitoAnterior>750m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>750</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/fushimi_inari_05_senbon_torii_01.jpg" titulo="Senbon Torii 01."></fotografia>
@@ -83,7 +83,7 @@
 			el salón de plegarias del santuario interior. Construido en 1499, aquí es donde se reza a las deidades de la montaña Inari y de hecho el 
 			santuario está alineado para poder ver los tres picos del monte desde aquí.</descripcion>
 			<coordenadas longitud="34.966528" latitud="135.775551" altitud="61"></coordenadas>
-			<distanciaHitoAnterior>23m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>23</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/fushimi_inari_07.jpg" titulo="Okusha Hohaisho."></fotografia>
@@ -97,7 +97,7 @@
 			mirador Kojin-mine, situado detrás del santuario Tanakasha y uno de los mejores lugares en los que disfrutar las vistas de Kyoto y el 
 			monte Inari.</descripcion>
 			<coordenadas longitud="34.580170" latitud="135.462162" altitud="49"></coordenadas>
-			<distanciaHitoAnterior></distanciaHitoAnterior>
+			<distanciaHitoAnterior>60</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/fushimi_inari_08.jpg" titulo="Intersección Yotsu-tusji."></fotografia>
@@ -141,7 +141,7 @@
 			de computadoras y equipos de radio. Junto a los cafés, el área circundante es también hogar del teatro AKB, donde puedes ver presentaciones del 
 			grupo idol AKB48.</descripcion>
 			<coordenadas longitud="35.698370" latitud="139.773116" altitud="17"></coordenadas>
-			<distanciaHitoAnterior>2600m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>2600</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/akihabara_01_station.jpeg" titulo="Estación Akihabara."></fotografia>		
@@ -156,7 +156,7 @@
 			está a un minuto de la entrada de la línea JR Akihabara al Barrio Electrónico. Con una sección libre de impuestos y otros servicios, LABI ha 
 			desarrollado una excelente atención al cliente para los visitantes de Japón.</descripcion>
 			<coordenadas longitud="35.698041" latitud="139.772249" altitud="42"></coordenadas>
-			<distanciaHitoAnterior>180m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>180</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/akihabara_02_labi.jpeg" titulo="Tienda de ordenadores LABI."></fotografia>
@@ -176,7 +176,7 @@
 			revistas, CDs, accesorios y más. Asimismo, puedes encontrar pequeños artículos como galletas y tazas, que son del tamaño perfecto para llevar a 
 			casa como souvenirs.</descripcion>
 			<coordenadas longitud="35.698346" latitud="139.771694" altitud="40"></coordenadas>
-			<distanciaHitoAnterior>74m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>74</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/akihabara_03_gamers.jpeg" titulo="La tienda de Gamers en Akihabara."></fotografia>
@@ -191,7 +191,7 @@
 			y Animate, se alinean en los corredores. El Teatro Akiba Culture está situado en el primer piso, donde se pueden ver actuaciones en vivo de 
 			los idols en ciernes.</descripcion>
 			<coordenadas longitud="35.699562" latitud="139.770478" altitud="40"></coordenadas>
-			<distanciaHitoAnterior>350m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>350</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/akihabara_04_culture_zone.jpeg" titulo="Zona de Culturas de Akihabara."></fotografia>
@@ -205,7 +205,7 @@
 			abarca del cuarto al séptimo piso del edificio y al parecer hay 180 maids en el personal. Los menús están disponibles en inglés, asi que pide 
 			algo de comida y una bebida.</descripcion>
 			<coordenadas longitud="35.699604" latitud="139.770739" altitud="27"></coordenadas>
-			<distanciaHitoAnterior>18m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>18</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/akihabara_05_home_cafe.jpeg" titulo="Home cafe."></fotografia>
@@ -247,7 +247,7 @@
 			752 como el templo insignia de todos los templos Budistas japoneses, y alcanzó tal importancia que la capital se movió de Nara a Nagaoka para disminuir 
 			la influencia del templo en los asuntos del gobierno.</descripcion>
 			<coordenadas longitud="34.688980" latitud="135.839816" altitud="148"></coordenadas>
-			<distanciaHitoAnterior>1600m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>1600</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/nara_01.jpg" titulo="Templo Todaji."></fotografia>		
@@ -260,7 +260,7 @@
 			<descripcion>El Parque Nara es un gran parque del centro de Nara. Establecido en 1980, es la localización de muchas de las atracciones principales de 
 			Nara, como el Todaiji, Kasuga Taisha, Kofukuji y el Museo Nacional de Nara.</descripcion>
 			<coordenadas longitud="34.685057" latitud="135.843014" altitud="114"></coordenadas>
-			<distanciaHitoAnterior>850m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>850</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/nara_02.jpg" titulo="Parque Nara."></fotografia>
@@ -278,7 +278,7 @@
 			<descripcion>Kasuga Taisha es el santuario más famoso de Nara. Se estableció al mismo tiempo que la capital y está dedicado a la deidad responsable de 
 			la protección de la ciudad.</descripcion>
 			<coordenadas longitud="34.681380" latitud="135.848387" altitud="151"></coordenadas>
-			<distanciaHitoAnterior>1100m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>1100</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/nara_03.jpg" titulo="Santuario Kasuga Taisha."></fotografia>
@@ -322,7 +322,7 @@
 			durante un período de casi dos siglos. Abierto al público en 1871, Kenrokuen se caracteriza por una variedad de árboles en flor que dejan 
 			al jardín con un aspecto diferente en cada estación del año.</descripcion>
 			<coordenadas longitud="36.562126" latitud="136.662654" altitud="53"></coordenadas>
-			<distanciaHitoAnterior>2600m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>2600</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/kanazawa_01.jpg" titulo="Jardín Kenrokuen."></fotografia>		
@@ -340,7 +340,7 @@
 			<descripcion>El Museo del Siglo 21 de Arte Contemporáneo abrió en 2004 en el centro de Kanazawa, solo a unos pasos del Kenrouken. Exhibe 
 			obras de reconocidos artistas contemporáneos de Japón y de todo el mundo, y es uno de los museos de arte más famosos de Japón.</descripcion>
 			<coordenadas longitud="36.560892" latitud="136.658176" altitud="25"></coordenadas>
-			<distanciaHitoAnterior>450m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>450</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/kanazawa_03.jpg" titulo="21st Century Museum of Contemporary Art."></fotografia>
@@ -354,7 +354,7 @@
 			bailan. Durante el Período Edo, las chaya se encontraban en distritos de entretenimiento designados, normalmente cerca del límite de 
 			la ciudad. Kanazawa tiene tres distritos chaya bien preservados, Higashi Chayagai, Nishi Chayagai y Kazuemachi.</descripcion>
 			<coordenadas longitud="36.572626" latitud="136.666506" altitud="20"></coordenadas>
-			<distanciaHitoAnterior>2300m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>2300</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/kanazawa_02.jpg" titulo="Distrito Higashi Chaya."></fotografia>
@@ -395,7 +395,7 @@
 			<descripcion>Múltiples compañías ofrecen tours de rafting por el río Tone. Los 12 km de río tienen varias secciones dependiendo de tu habilidad, desde 
 			un novato a un veterano de este deporte.</descripcion>
 			<coordenadas longitud="36.782515" latitud="138.976771" altitud="16"></coordenadas>
-			<distanciaHitoAnterior>1100m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>1100</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/minakami_01.jpg" titulo="Rafting en el río Tone."></fotografia>		
@@ -408,7 +408,7 @@
 			<descripcion>Osenkaku, el único ryokan (posada) de Takaragawa Onsen, tiene los más famosos baños exteriores del país. Los baños de género mixto están 
 			al lado de un río y muestran un distinto paisaje cada estación del año. También tiene un baño exterior solo para mujeres.</descripcion>
 			<coordenadas longitud="36.847982" latitud="139.047026" altitud="687"></coordenadas>
-			<distanciaHitoAnterior>12900m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>12900</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/minakami_02.jpg" titulo="Takaragawa Onsen."></fotografia>
@@ -422,7 +422,7 @@
 			Minakami. Esparcidos por esta pequeña aldea hay más de dos docenas de talleres y tiendas donde se puede comprar varios productos artesanales japoneses. 
 			Además, se pueden experimentar de primera mano, ya sea viendo su fabricación o participando en un taller para que puedas hacerlos tu mismo.</descripcion>
 			<coordenadas longitud="36.696057," latitud="138.908294" altitud="547"></coordenadas>
-			<distanciaHitoAnterior>34500m</distanciaHitoAnterior>
+			<distanciaHitoAnterior>34500</distanciaHitoAnterior>
 			<fotografias>
 			
 				<fotografia src="./multimedia/minakami_03.jpg" titulo="Takumi no Sato."></fotografia>
