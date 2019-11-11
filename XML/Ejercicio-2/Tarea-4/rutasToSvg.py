@@ -39,33 +39,38 @@ def getSVGHeight(elem):
     for hito in elem.find("hitos"):
         if int(hito.find("coordenadas").get("altitud")) > maxHeight:
             maxHeight = int(hito.find("coordenadas").get("altitud"))
-    return maxHeight + 200
+    return maxHeight + 600
+
+
+def getSVGWidth(elem):
+    svgWidth = 0
+    for hito in elem.find("hitos"):
+        svgWidth += int(hito.find("distanciaHitoAnterior").text)
+    return svgWidth + 600
 
 
 def getPoints(elem, svgHeight):
     # First point
-    elemPoints = "0," + str(svgHeight - int(elem.find("coordenadas").get("altitud")) - 50)
+    elemPoints = "10," + str(svgHeight - int(elem.find("coordenadas").get("altitud")) - 400)
 
     # Intermediate points
     prevDistance = 0
     for hito in elem.find("hitos"):
         elemPoints += " "
         prevDistance = int(hito.find("distanciaHitoAnterior").text) + prevDistance
-        altitude = svgHeight - int(hito.find("coordenadas").get("altitud")) - 50
+        altitude = svgHeight - int(hito.find("coordenadas").get("altitud")) - 400
         elemPoints += str(prevDistance) + "," + str(altitude)
-    
-    # Last point
-    elemPoints += "0," + str(svgHeight - int(elem.find("coordenadas").get("altitud")) - 50)    
-    
+        
     return elemPoints
+
 
 def setSVGTextsForRoute(elem, svgHeight, elevProfile):
     # First point
     svgText = ET.SubElement(elevProfile, "text")
-    svgText.set("x", str(0))
-    svgText.set("y", str(svgHeight - 45))
+    svgText.set("x", str(10))
+    svgText.set("y", str(svgHeight - 400))
     svgText.set("style", "writing-mode: tb; glyph-orientation-vertical: 0;")
-    svgText.text = str(elem.find("nombre").text)
+    svgText.text = str(elem.find("direccion_inicio").text)
 
     # Intermediate points
     prevDistance = 0
@@ -73,16 +78,16 @@ def setSVGTextsForRoute(elem, svgHeight, elevProfile):
         prevDistance = int(hito.find("distanciaHitoAnterior").text) + prevDistance
         svgText = ET.SubElement(elevProfile, "text")
         svgText.set("x", str(prevDistance))
-        svgText.set("y", str(svgHeight - 45))
+        svgText.set("y", str(svgHeight - 400))
         svgText.set("style", "writing-mode: tb; glyph-orientation-vertical: 0;")
         svgText.text = str(hito.find("nombre").text)
     
     # Last point    
     svgText = ET.SubElement(elevProfile, "text")
-    svgText.set("x", str(0))
-    svgText.set("y", str(svgHeight - 45))
+    svgText.set("x", str(10))
+    svgText.set("y", str(svgHeight - 400))
     svgText.set("style", "writing-mode: tb; glyph-orientation-vertical: 0;")
-    svgText.text = str(elem.find("nombre").text)
+    svgText.text = str(elem.find("direccion_inicio").text)
 
 
 
@@ -91,11 +96,15 @@ def createSVGFiles(root):
         # SVG Height
         svgHeight = getSVGHeight(elem)
 
+        # SVG Width
+        svgWidth = getSVGWidth(elem)
+
         # SVG
         elevProfile = ET.Element("svg")
         elevProfile.set("version", "1.0")
         elevProfile.set("xmlns", "http://www.w3.org/2000/svg")
         elevProfile.set("height", str(svgHeight))
+        elevProfile.set("width", str(svgWidth))
         
         # Polyline
         svgPolyline = ET.SubElement(elevProfile, "polyline")
