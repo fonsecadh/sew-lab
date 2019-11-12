@@ -1,0 +1,1 @@
+infoNavegador.escribirParrafos();
