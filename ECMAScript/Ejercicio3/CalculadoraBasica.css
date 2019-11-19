@@ -1,0 +1,130 @@
+/* Fonts and text */
+
+/*
+ * a=0; b=0; c=1;
+ * Specificity: 1
+ */
+ h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-stretch: expanded;
+ }
+
+ /* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h1 {
+    font-size: 2em;
+} 
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+button {
+    font-family: sans-serif;
+    font-size: 1.25em;
+}
+
+
+
+/* Color */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+ h1 {
+    color: #bb841a;
+    background-color: #1b1b23;
+}
+
+
+/* 
+ * a=0; b=1; c=0;
+ * Specificity: 10 
+ */
+.reg {
+    background-color: #5f0000;
+    color: #bb841a;    
+}
+
+/* 
+ * a=0; b=1; c=0;
+ * Specificity: 10 
+ */
+.op {
+    color: #1b1b23;
+    background-color: #bb841a;    
+}
+
+/* 
+ * a=0; b=1; c=0;
+ * Specificity: 10 
+ */
+.num, .clear, .dot, .eq {    
+    color: #1b1b23;
+    background-color: #858596;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+body {
+    background-color: #1b1b23;
+}
+
+
+
+/* Padding and margin */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+ h1 {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    text-justify: auto;
+}
+
+/* 
+ * a=0; b=1; c=0;
+ * Specificity: 10 
+ */
+ .calculator {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+/* 
+ * a=0; b=1; c=0;
+ * Specificity: 10 
+ */
+ .calrow {
+    text-align: center;
+}
+
+
+
+/* Buttons */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+ button {
+    border: none;
+    padding: 1em;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0.15em 0.25em;
+    cursor: pointer;
+    width: 4em;
+}
+
