@@ -27,6 +27,15 @@ button {
     font-size: 1.25em;
 }
 
+/* 
+ * a=0; b=1; c=0;
+ * Specificity: 10 
+ */
+.result {
+    font-family: sans-serif;
+    font-size: 1.25em;
+}
+
 
 
 /* Color */
@@ -46,8 +55,17 @@ button {
  * Specificity: 10 
  */
 .reg {
-    background-color: #5f0000;
     color: #bb841a;    
+    background-color: #5f0000;
+}
+
+/* 
+ * a=0; b=2; c=0;
+ * Specificity: 20 
+ */
+.reg:hover {
+    color: #5f0000;
+    background-color: #bb841a;    
 }
 
 /* 
@@ -60,6 +78,15 @@ button {
 }
 
 /* 
+ * a=0; b=2; c=0;
+ * Specificity: 20 
+ */
+.op:hover {
+    color: #bb841a;    
+    background-color: #1b1b23;
+}
+
+/* 
  * a=0; b=1; c=0;
  * Specificity: 10 
  */
@@ -69,11 +96,29 @@ button {
 }
 
 /* 
+ * a=0; b=2; c=0;
+ * Specificity: 20 
+ */
+.num:hover, .clear:hover, .dot:hover, .eq:hover {    
+    color: #858596;
+    background-color: #1b1b23;
+}
+
+/* 
  * a=0; b=0; c=1;
  * Specificity: 1 
  */
 body {
     background-color: #1b1b23;
+}
+
+/* 
+ * a=0; b=1; c=1;
+ * Specificity: 11 
+ */
+ .result input {
+    color: #1b1b23;
+    background-color: #bb841a;    
 }
 
 
@@ -110,6 +155,29 @@ body {
     text-align: center;
 }
 
+/* 
+ * a=0; b=1; c=0;
+ * Specificity: 10 
+ */
+ .result {
+    text-align: center;
+    margin: 0.15em 0.25em;
+    padding: 1.1em;
+}
+
+/* 
+ * a=0; b=1; c=1;
+ * Specificity: 11 
+ */
+ .result input {
+    border: none;
+    margin: 0.15em 0.25em;
+    padding: 1em;
+    text-decoration: none;
+    display: inline-block;
+    width: 25.5em;
+}
+
 
 
 /* Buttons */
@@ -120,10 +188,10 @@ body {
  */
  button {
     border: none;
+    margin: 0.15em 0.25em;
     padding: 1em;
     text-decoration: none;
     display: inline-block;
-    margin: 0.15em 0.25em;
     cursor: pointer;
     width: 4em;
 }
