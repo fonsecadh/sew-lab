@@ -35,6 +35,22 @@ class BasicCalculator {
         document.getElementById("opPlus").addEventListener("click", function() {
             _this.resultTxtField.value += "+";
         });
+
+        // We add the listeners for the buttons representing the calculator's registers
+        // TODO: Implement the listeners for the calculator's registers
+        
+        // We add the listeners for the rest of the buttons
+        document.getElementById("dot").addEventListener("click", function() { 
+            _this.resultTxtField.value += ".";
+        });
+
+        document.getElementById("clear").addEventListener("click", function() {
+            _this.resultTxtField.value = "";
+        });
+
+        document.getElementById("eq").addEventListener("click", function() {
+            // TODO: Evaluate the result
+        });
     }
 }
 
