@@ -1,0 +1,93 @@
+/* Fonts and text */
+
+/*
+ * a=0; b=0; c=1;
+ * Specificity: 1
+ */
+h1,h2,h3,h4 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-stretch: expanded;
+    font-style: italic;
+}
+
+ /* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h1 {
+    font-size: 2em;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h2 {
+    font-size: 1.75em;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h3 {
+    font-size: 1.5em;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h4 {
+    font-size: 1.25em;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+p {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+
+
+/* Color */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+ h1 {
+    color: #858596;
+    background-color: #1b1b23;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h2,h3,h4 {
+    color: #bb841a;
+    background-color: #1b1b23;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+p {
+    color: #858596;
+    background-color: #1b1b23;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+body {
+    background-color: #1b1b23;
+}
+
