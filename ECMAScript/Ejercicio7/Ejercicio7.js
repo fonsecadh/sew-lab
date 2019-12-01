@@ -25,6 +25,8 @@ class DocumentModifier {
         this.removeLastTable();
         this.removeFirstTable();
         this.removeLastPrTableRow();
+        this.showElementsInfo();
+        this.addRowsAndColumns();
     }
 
     // Showing and hiding elements
@@ -160,7 +162,7 @@ class DocumentModifier {
 
 
     // Add elements
-    
+
     addParagraph() {
         $(document).ready(function() {
             $("#btnAddPara").click(function() {
@@ -224,6 +226,46 @@ class DocumentModifier {
         $(document).ready(function() {
             $("#btnRemLstPrTableRow").click(function() {
                 $("#practices tbody tr:last").remove();
+            });
+        });
+    }
+
+
+    // Iterate through the HTML elements
+
+    showElementsInfo() {
+        $(document).ready(function() {
+            $("#btnIterateTree").click(function() {
+                $("*", document.body).each(function() {
+                    let fatherTag = $(this).parent().get(0).tagName;
+                    let currentTag = $(this).get(0).tagName;
+                    $(this).prepend(document.createTextNode("Etiqueta del padre: <" + fatherTag + ">, elemento actual: <" + currentTag + ">, valor: "));
+                });
+            });
+        });
+    }
+
+
+    // Add columns and rows of a table
+
+    addRowsAndColumns() {
+        $(document).ready(function() {
+            $("#btnAddColsRowsTablePract").click(function() {
+                let counterCols = 0;
+                let counterRows = 0;
+
+                // Columns
+                $("#practices thead tr th").each(function() {
+                    counterCols++;
+                });
+
+                // Rows
+                $("#practices * tr").each(function() {
+                    counterRows++;
+                });
+
+                let total = counterRows + counterCols;
+                $("#practices").after("<p>Number of rows: " + counterRows + ", number of columns: " + counterCols + ", total: " + total);
             });
         });
     }
