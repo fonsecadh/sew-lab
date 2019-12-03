@@ -15,18 +15,16 @@
         <main>
             <!-- Currency conversor -->
             <p>Moneda actual</p>
-            <select>                
+            <select id="actual">                
             </select>
             <p>Cantidad</p>
-            <input type="text">
+            <input type="number" min="0" step="0.01" id="inputID">
             <p>Moneda a cambiar</p>
-            <select>                
+            <select id="toChange">                
             </select>
             <p>Cantidad</p>
-            <input type="text" readonly>
+            <input type="number" readonly id="outputID">
+            <button type="button" id="btnConvert">Convert</button>
         </main>
-        <aside>
-            <!-- Here all the current currency values will be shown -->
-        </aside>
     </body>
 </html>

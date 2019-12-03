@@ -1,40 +1,47 @@
 "use strict";
 class CurrencyConverter {
     constructor() {
+        this.loadComboBoxes();
+        this.addBtnListener();
     }
-    writeMeteoDataOfCity(city) {
+    loadComboBoxes() {
         $(document).ready(function () {
             let apiKey = "";
-            $.getJSON("https://data.fixer.io/api/latest?access_key=" + apiKey, function(jsonData) {
-                let output="<div>";
+            // TODO: Load only five currencies (Including Euro)
+            $.getJSON("https://data.fixer.io/api/symbols?access_key=" + apiKey, function(jsonData) {
                 let d = jsonData;
-                output += "<h2>Nombre de la ciudad: " + d.name + "</h2>";
-                output += "<p>País: " + d.sys.country + "</p>";
-                for (var i = 0; i < d.weather.length; i++) {
-                    let w = d.weather[i];
-                    output += "<ul>";
-                    output += "<li><img src=\"https://openweathermap.org/img/w/" + w.icon + ".png\" alt=" + w.description + "></li>";
-                    output += "<li>" + w.main + "</li>";
-                    output += "<li>Descripción: " + w.description + "</li>";
-                    output += "</ul>";
+                for (var s in d.symbols) {
+                    // Load combo boxes
+                    let item = "<option value=" + d.symbols[s.toString()] + ">" + s + "</option>;
+                    $("#actual").append(item);
+                    $("#toChange").append(item);
                 }
-                output += "<p>Más Información:</p>"
-                output += "<ul>";
-                output += "<li>Temperatura: " + d.main.temp + "ºC</li>";
-                output += "<li>Presión: " + d.main.pressure + "Pa</li>";
-                output += "<li>Humedad: " + d.main.humidity + "%</li>";
-                output += "<li>Temperatura mínima: " + d.main.temp_min + "ºC</li>";
-                output += "<li>Temperatura máxima: " + d.main.temp_max + "ºC</li>";
-                output += "<li>Velocidad del viento: " + d.wind.speed + "m/s</li>";
-                output += "<li>Nubes: " + d.clouds.all + "%</li>";
-                output += "</ul>";                
-                output += "</div>";
-                $("main").append(output);
             });
         });
-    }    
+    }
+    addBtnListener() {
+        $(document).ready(function () {
+            $("#btnConvert").click(function() {
+                $("#inputID").val(0);
+                $("#outputID").val(0);
+                let actualCurrencySymbol = $("#actual option:selected").val();
+                let toChangeCurrencySymbol = $("#toChange option:selected").val();
+                let amount = $("#inputID").val();
+                $("#outputID").val(this.convertCurrency(amount, actualCurrencySymbol, toChangeCurrencySymbol));
+            });
+        });
+    }
+    convertCurrency(amount, actual, toChange) {
+        $(document).ready(function () {
+            let apiKey = "";
+            $.getJSON("https://data.fixer.io/api/latest?access_key=" + apiKey + "&from=" + actual + "&to=" + toChange + "&amount=" + amount, function(jsonData) {
+                let d = jsonData;
+                return d.result;
+            });
+        });
+    }
 }
 
 window.addEventListener("load", function() {
-    new MeteoData();
+    new CurrencyConverter();
 });
