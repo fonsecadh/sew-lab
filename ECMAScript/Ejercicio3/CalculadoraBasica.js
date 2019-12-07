@@ -109,14 +109,18 @@ class BasicCalculator {
         let _this = this; 
 
         document.getElementById("eq").addEventListener("click", function() {
-            // TODO: Improve this to check for wrong input before evaluating
-            try {
-                _this.resultTxtField.value = eval(_this.resultTxtField.value);
-                _this.calcStatus = "EVALUATED";
-            } catch (e) {
-                if (e instanceof SyntaxError) {
-                    _this.resultTxtField.value = "INVALID SYNTAX";
+            if (_this.checkInput(_this.resultTxtField.value) === true) {
+                try {
+                    _this.resultTxtField.value = eval(_this.resultTxtField.value);
+                    _this.calcStatus = "EVALUATED";
+                } catch (e) {
+                    if (e instanceof SyntaxError) {
+                        _this.resultTxtField.value = "INVALID SYNTAX";
+                    }
+                    _this.calcStatus = "ERROR"; // Calculator status changes to ERROR
                 }
+            } else {
+                _this.resultTxtField.value = "INVALID SYNTAX";
                 _this.calcStatus = "ERROR"; // Calculator status changes to ERROR
             }
         });
@@ -131,6 +135,10 @@ class BasicCalculator {
             this.resultTxtField.value = ""; // Restart txt field
             this.calcStatus = "OK";
         }
+    }
+
+    checkInput(input) {
+        return /^-?[0-9]+(.[0-9]+)*((\+|\-|\*|\/)-?[0-9]+(.[0-9]+)*)*$/.test(input);
     }
 }
 
