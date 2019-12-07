@@ -112,6 +112,15 @@ body {
     border-color: #1b1b23;
 }
 
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+ select, input {
+    color: #1b1b23;
+    background-color: #bb841a;
+}
+
 
 
 /* Buttons */
@@ -126,6 +135,22 @@ body {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    height: 10em;
-    width: 10em;
+    height: 7em;
+    width: 7em;
 }
+
+
+
+/* Combo boxes */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+ select {
+    margin: 0.15em 0.25em;
+    padding: 1em;
+}
+
+
+
