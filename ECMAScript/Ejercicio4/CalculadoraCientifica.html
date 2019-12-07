@@ -12,6 +12,9 @@
             <h1>Calculadora Científica</h1>
         </header>
         <div class="calculator">
+            <div class="calcMode">
+                <p id="actualMode">Mode: Degrees<p>
+            </div>
             <div class="result">
                 <input type="text" id="resTxt" readonly />
             </div>
@@ -23,24 +26,24 @@
                 <button type="button" class="reg" id="ms">ms</button>
             </div>
             <div class="calcrow">
-                <button type="button" class="op" id="square">x²</button>        
-                <button type="button" class="op" id="power">xʸ</button>
-                <button type="button" class="op" id="sin">sin</button>
-                <button type="button" class="op" id="cos">cos</button>
-                <button type="button" class="op" id="tan">tan</button>
+                <button type="button" class="op" id="opSquare">x²</button>        
+                <button type="button" class="op" id="opPower">xʸ</button>
+                <button type="button" class="op" id="opSin">sin</button>
+                <button type="button" class="op" id="opCos">cos</button>
+                <button type="button" class="op" id="opTan">tan</button>
             </div>
             <div class="calcrow">
-                <button type="button" class="op" id="sqrRoot">√</button>        
-                <button type="button" class="op" id="powerTen">10ˣ</button>
-                <button type="button" class="op" id="log">log</button>
-                <button type="button" class="op" id="exp">Exp</button>
-                <button type="button" class="op" id="mod">Mod</button>
+                <button type="button" class="op" id="opSqrRoot">√</button>        
+                <button type="button" class="op" id="opPowerTen">10ˣ</button>
+                <button type="button" class="op" id="opLog">log</button>
+                <button type="button" class="op" id="opExp">Exp</button>
+                <button type="button" class="op" id="opMod">Mod</button>
             </div>
             <div class="calcrow">
-                <button type="button" class="op" id="arrow">↑</button>        
-                <button type="button" class="op" id="ce">CE</button>
+                <button type="button" class="mode" id="degrees">Deg</button>        
+                <button type="button" class="mode" id="radians">Rad</button>
                 <button type="button" class="op" id="clear">C</button>
-                <button type="button" class="op" id="del">DEL</button>
+                <button type="button" class="op" id="opDel">DEL</button>
                 <button type="button" class="op" id="opDiv">/</button>
             </div>
             <div class="calcrow">
@@ -51,14 +54,14 @@
                 <button type="button" class="op" id="opMul">*</button>
             </div>
             <div class="calcrow">
-                <button type="button" class="op" id="factorial">n!</button>
+                <button type="button" class="op" id="opFactorial">n!</button>
                 <button type="button" class="num" id="num4">4</button>
                 <button type="button" class="num" id="num5">5</button>
                 <button type="button" class="num" id="num6">6</button>
                 <button type="button" class="op" id="opMinus">-</button>
             </div>
             <div class="calcrow">
-                <button type="button" class="op" id="sign">±</button>
+                <button type="button" class="op" id="opSign">±</button>
                 <button type="button" class="num" id="num1">1</button>
                 <button type="button" class="num" id="num2">2</button>
                 <button type="button" class="num" id="num3">3</button>

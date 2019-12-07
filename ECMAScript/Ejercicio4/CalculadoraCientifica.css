@@ -18,6 +18,17 @@ h1 {
     font-size: 2em;
 } 
 
+/*
+ * a=0; b=0; c=1;
+ * Specificity: 1
+ */
+ p {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-stretch: expanded;
+    font-size: 1.25em;
+ }
+
 /* 
  * a=0; b=0; c=1;
  * Specificity: 1 
@@ -44,7 +55,7 @@ button {
  * a=0; b=0; c=1;
  * Specificity: 1 
  */
- h1 {
+ h1, p {
     color: #bb841a;
     background-color: #1b1b23;
 }
@@ -54,7 +65,7 @@ button {
  * a=0; b=1; c=0;
  * Specificity: 10 
  */
-.reg {
+.reg, .mode {
     color: #bb841a;    
     background-color: #5f0000;
 }
@@ -63,7 +74,7 @@ button {
  * a=0; b=2; c=0;
  * Specificity: 20 
  */
-.reg:hover {
+.reg:hover, .mode:hover {
     color: #5f0000;
     background-color: #bb841a;    
 }

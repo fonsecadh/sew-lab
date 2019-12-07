@@ -144,25 +144,209 @@ class BasicCalculator {
 
 class ScientificCalculator extends BasicCalculator {
     constructor() {
+        // Superclass constructor
         super();
+
+        // Calculator mode
+        this.mode == "DEG" // Can be DEG (Degrees) or RAD (Radians)
 
         // We add the new listeners to the scientific calculator
         this.addMoreOperatorListeners();
         this.addRegisterListeners(); // Overriden superclass method
         this.addParenthesisListeners();
         this.addPiListener();
+        this.addModeListeners();
+    }
+
+    evalCurrentExpression() {
+        if (this.checkInput(this.resultTxtField.value) === true) {
+            try {
+                this.resultTxtField.value = eval(this.resultTxtField.value);
+            } catch (e) {
+                if (e instanceof SyntaxError) {
+                    this.resultTxtField.value = "INVALID SYNTAX";
+                }
+               this.calcStatus = "ERROR"; // Calculator status changes to ERROR
+            }
+        } else {
+            this.resultTxtField.value = "INVALID SYNTAX";
+            this.calcStatus = "ERROR"; // Calculator status changes to ERROR
+        }
+    }
+
+    factorial(n) {
+        let result = 1;
+        for (var i = 2; i <= n; i++) {
+            result *= i;
+        }
+        return result;
     }
 
     addMoreOperatorListeners() {
+        // Save object reference
+        let _this = this; 
+
+        // We add the listeners for the buttons representing the calculator's new operators
+        document.getElementById("opSquare").addEventListener("click", function() {
+            _this.checkStatus(); // We check the status of the calculator
+            _this.evalCurrentExpression(); // Evaluate current expression in the text field
+            if (_this.calcStatus !== "ERROR") {
+                _this.resultTxtField.value = String(Math.pow(parseInt(_this.resultTxtField.value), 2));
+            }
+        });
+
+        document.getElementById("opPower").addEventListener("click", function() {
+            _this.checkStatus(); // We check the status of the calculator
+            _this.resultTxtField.value += "**";
+        });
+
+        document.getElementById("opSin").addEventListener("click", function() {
+            _this.checkStatus(); // We check the status of the calculator
+            _this.evalCurrentExpression(); // Evaluate current expression in the text field
+            if (_this.calcStatus !== "ERROR") {
+                if (_this.mode === "DEG") {
+                    _this.resultTxtField.value = String(Math.sin(_this.toRadians(parseInt(_this.resultTxtField.value))));
+                } else {
+                    _this.resultTxtField.value = String(Math.sin(parseInt(_this.resultTxtField.value)));
+                }
+            }
+        });
+
+        document.getElementById("opCos").addEventListener("click", function() {
+            _this.checkStatus(); // We check the status of the calculator
+            _this.evalCurrentExpression(); // Evaluate current expression in the text field
+            if (_this.calcStatus !== "ERROR") {
+                if (_this.mode === "DEG") {
+                    _this.resultTxtField.value = String(Math.cos(_this.toRadians(parseInt(_this.resultTxtField.value))));
+                } else {
+                    _this.resultTxtField.value = String(_this.toRadians(parseInt(_this.resultTxtField.value)));
+                }
+            }
+        });
+
+        document.getElementById("opTan").addEventListener("click", function() {
+            _this.checkStatus(); // We check the status of the calculator
+            _this.evalCurrentExpression(); // Evaluate current expression in the text field
+            if (_this.calcStatus !== "ERROR") {
+                if (_this.mode === "DEG") {
+                    _this.resultTxtField.value = String(Math.tan(_this.toRadians(parseInt(_this.resultTxtField.value))));
+                } else {
+                    _this.resultTxtField.value = String(Math.tan(parseInt(_this.resultTxtField.value)));
+                }
+            }
+        });
+
+        document.getElementById("opSqrRoot").addEventListener("click", function() {
+            _this.checkStatus(); // We check the status of the calculator
+            _this.evalCurrentExpression(); // Evaluate current expression in the text field
+            if (_this.calcStatus !== "ERROR") {
+                _this.resultTxtField.value = String(Math.sqrt(parseInt(_this.resultTxtField.value)));
+            }
+        });
+
+        document.getElementById("opPowerTen").addEventListener("click", function() {
+            _this.checkStatus(); // We check the status of the calculator
+            _this.evalCurrentExpression(); // Evaluate current expression in the text field
+            if (_this.calcStatus !== "ERROR") {
+                _this.resultTxtField.value = String(Math.pow(10, parseInt(_this.resultTxtField.value)));
+            }
+        });
+
+        document.getElementById("opLog").addEventListener("click", function() {
+            _this.checkStatus(); // We check the status of the calculator
+            _this.evalCurrentExpression(); // Evaluate current expression in the text field
+            if (_this.calcStatus !== "ERROR") {
+                _this.resultTxtField.value = String(Math.log(parseInt(_this.resultTxtField.value)));
+            }
+        });
+
+        document.getElementById("opExp").addEventListener("click", function() {
+            _this.checkStatus(); // We check the status of the calculator
+            _this.resultTxtField.value += "*10**";
+        });
+
+        document.getElementById("opMod").addEventListener("click", function() {
+            _this.checkStatus(); // We check the status of the calculator
+            _this.resultTxtField.value += "%";
+        });
+
+        document.getElementById("opDel").addEventListener("click", function() {
+            if (_this.resultTxtField.value !== null) {
+                _this.resultTxtField.value = _this.resultTxtField.value.substring(0, _this.resultTxtField.value.length - 1);
+            }
+        });
+
+        document.getElementById("opFactorial").addEventListener("click", function() {
+            _this.checkStatus(); // We check the status of the calculator
+            _this.evalCurrentExpression(); // Evaluate current expression in the text field
+            if (_this.calcStatus !== "ERROR") {
+                let f = _this.factorial(parseInt(_this.resultTxtField.value));
+                _this.resultTxtField.value = String(f);
+            }
+        });
+
+        document.getElementById("opSign").addEventListener("click", function() {
+            _this.checkStatus(); // We check the status of the calculator
+            _this.evalCurrentExpression(); // Evaluate current expression in the text field
+            if (_this.calcStatus !== "ERROR") {
+                let result = - parseInt(_this.resultTxtField.value);
+                _this.resultTxtField.value = String(result);
+            }
+        });
     }
 
     addRegisterListeners() {
     }
 
     addParenthesisListeners() {
+        // Save object reference
+        let _this = this; 
+
+        // We add the listeners for the buttons representing the calculator's parenthesis
+        document.getElementById("leftP").addEventListener("click", function() {
+            _this.checkStatus(); // We check the status of the calculator
+            _this.resultTxtField.value += "(";
+        });
+
+        document.getElementById("rightP").addEventListener("click", function() {
+            _this.checkStatus(); // We check the status of the calculator
+            _this.resultTxtField.value += ")";
+        });
     }
 
     addPiListener() {
+        // Save object reference
+        let _this = this; 
+
+        // We add the listeners for the buttons representing the calculator's PI number
+        document.getElementById("pi").addEventListener("click", function() {
+            _this.checkStatus(); // We check the status of the calculator
+            _this.resultTxtField.value += String(Math.PI);
+        });
+    }
+
+    addModeListeners() {
+        // Save object reference
+        let _this = this; 
+
+        // We add the listeners for the buttons representing the calculator's modes
+        document.getElementById("degrees").addEventListener("click", function() {
+            _this.mode = "DEG";
+            document.getElementById("actualMode").innerHTML = "Mode: Degrees";
+        });
+
+        document.getElementById("radians").addEventListener("click", function() {
+            _this.mode = "RAD";
+            document.getElementById("actualMode").innerHTML = "Mode: Radians";
+        });
+    }
+
+    toDegrees(radians) {
+        return radians * (180 / Math.PI);
+    }
+
+    toRadians(degree) {
+        return degree * (Math.PI / 180);
     }
 }
 
