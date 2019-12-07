@@ -26,7 +26,7 @@ class MeteoData {
                 output += "<p>Más Información:</p>"
                 output += "<ul>";
                 output += "<li>Temperatura: " + d.main.temp + "ºC</li>";
-                output += "<li>Presión: " + d.main.pressure + "Pa</li>";
+                output += "<li>Presión: " + d.main.pressure + "hPa</li>";
                 output += "<li>Humedad: " + d.main.humidity + "%</li>";
                 output += "<li>Temperatura mínima: " + d.main.temp_min + "ºC</li>";
                 output += "<li>Temperatura máxima: " + d.main.temp_max + "ºC</li>";
