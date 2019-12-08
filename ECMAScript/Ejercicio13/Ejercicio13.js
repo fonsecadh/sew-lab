@@ -1,5 +1,5 @@
 "use strict";
-class DocumentModifier {
+class BasicFileLoader {
     constructor() {
         // Attributes
         this.fileName = "";
@@ -36,6 +36,9 @@ class DocumentModifier {
 
         $(document).ready(function() {
             $("#inputFile").change(function() {
+                this.fileName = "";
+                this.fileType = "";
+                this.fileSize = "";
                 _this.loadInputFile();
             });
         });
@@ -45,7 +48,7 @@ class DocumentModifier {
         let f = $("#inputFile").prop("files")[0];
         this.fileName = String(f.name);
         this.fileType = String(f.type);
-        this.fileSize = String(f.size);
+        this.fileSize = String(f.size + "Bytes");
         this.showMetadata();
         this.showData(f);
     }
@@ -63,10 +66,10 @@ class DocumentModifier {
     }
 
     showData(file) {
-        if (this.fileType.match(/text.*/) || this.type.match("application/json")) {
+        if (this.fileType.match(/text.*/) || this.fileType.match("application/json")) {
             this.showDataElements();
             let reader = new FileReader();
-            reader.onLoad = function(e) {
+            reader.onload = function(e) {
                 $("#dataFile").text(reader.result);
             };
             reader.readAsText(file);
@@ -77,7 +80,7 @@ class DocumentModifier {
 }
 
 window.addEventListener("load", function() { 
-    new DocumentModifier();
+    new BasicFileLoader();
 });
 
 
