@@ -11,7 +11,6 @@ class BasicCalculator {
         // We add the button listeners
         this.addNumberListeners();
         this.addOperatorListeners();
-        this.addRegisterListeners();
         this.addDotListener();
         this.addClearListener();
         this.addEqualsListener();
@@ -67,7 +66,7 @@ class BasicCalculator {
         let _this = this; 
 
         // We add the listeners for the buttons representing the calculator's registers
-        document.getElementById("mc").addEventListener("click", function() {
+        document.getElementById("mrc").addEventListener("click", function() {
             _this.resultTxtField.value = _this.register; // Show register
             _this.register = 0; // Clear register
         });
@@ -138,6 +137,9 @@ class BasicCalculator {
     }
 
     checkInput(input) {
+        input = input.replace("(", "");
+        input = input.replace(")", "");
+        input = input.replace("**", "");
         return /^-?[0-9]+(.[0-9]+)*((\+|\-|\*|\/)-?[0-9]+(.[0-9]+)*)*$/.test(input);
     }
 }
@@ -296,6 +298,35 @@ class ScientificCalculator extends BasicCalculator {
     }
 
     addRegisterListeners() {
+        // Save object reference
+        let _this = this; 
+
+        // We add the listeners for the buttons representing the calculator's registers
+        document.getElementById("mc").addEventListener("click", function() {
+            _this.register = 0; // Clear register
+        });
+
+        document.getElementById("mr").addEventListener("click", function() {
+            _this.resultTxtField.value = _this.register; // Show register
+        });
+
+        document.getElementById("mminus").addEventListener("click", function() {
+            if (_this.calcStatus === "EVALUATED") {
+                _this.register = eval(_this.register + "-" +  _this.resultTxtField.value);
+            }
+        });
+
+        document.getElementById("mplus").addEventListener("click", function() {
+            if (_this.calcStatus === "EVALUATED") {
+                _this.register = eval(_this.register + "+" + _this.resultTxtField.value); 
+            }
+        });
+
+        document.getElementById("ms").addEventListener("click", function() {
+            if (_this.calcStatus === "EVALUATED") {
+                _this.register = _this.resultTxtField.value;
+            }
+        });
     }
 
     addParenthesisListeners() {
