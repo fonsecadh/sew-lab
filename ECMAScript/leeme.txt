@@ -1,0 +1,8 @@
+Hugo Fonseca Díaz (UO258318)
+
+Nota:
+
+Los ejercicios asumen que JQuery se encuentra en una carpeta llamada "JQuery" y localizada al mismo nivel que las carpetas de ejercicios.
+
+Un saludo.
+
