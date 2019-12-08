@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>ECMAScript: Ejercicio 5</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Hugo Fonseca Díaz (UO258318)" />
+        <script src="CalculadoraRPN.js"></script>
+        <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Calculadora RPN</h1>
+        </header>
+        <div class="calculator">
+            <div class="calcMode">
+                <p id="actualMode">Mode: Degrees<p>
+            </div>
+            <div class="result">
+                <input type="text" id="resTxt" readonly />
+            </div>
+            <div class="calcrow">
+                <button type="button" class="reg" id="mc">mc</button>
+                <button type="button" class="reg" id="mr">mr</button>
+                <button type="button" class="reg" id="mminus">m-</button>
+                <button type="button" class="reg" id="mplus">m+</button>
+                <button type="button" class="reg" id="ms">ms</button>
+            </div>
+            <div class="calcrow">
+                <button type="button" class="op" id="opSquare">x²</button>        
+                <button type="button" class="op" id="opPower">xʸ</button>
+                <button type="button" class="op" id="opSin">sin</button>
+                <button type="button" class="op" id="opCos">cos</button>
+                <button type="button" class="op" id="opTan">tan</button>
+            </div>
+            <div class="calcrow">
+                <button type="button" class="op" id="opSqrRoot">√</button>        
+                <button type="button" class="op" id="opPowerTen">10ˣ</button>
+                <button type="button" class="op" id="opLog">log</button>
+                <button type="button" class="op" id="opExp">Exp</button>
+                <button type="button" class="op" id="opMod">Mod</button>
+            </div>
+            <div class="calcrow">
+                <button type="button" class="mode" id="degrees">Deg</button>        
+                <button type="button" class="mode" id="radians">Rad</button>
+                <button type="button" class="op" id="clear">C</button>
+                <button type="button" class="op" id="opDel">DEL</button>
+                <button type="button" class="op" id="opDiv">/</button>
+            </div>
+            <div class="calcrow">
+                <button type="button" class="pi" id="pi">π</button>        
+                <button type="button" class="num" id="num7">7</button>        
+                <button type="button" class="num" id="num8">8</button>
+                <button type="button" class="num" id="num9">9</button>
+                <button type="button" class="op" id="opMul">*</button>
+            </div>
+            <div class="calcrow">
+                <button type="button" class="op" id="opFactorial">n!</button>
+                <button type="button" class="num" id="num4">4</button>
+                <button type="button" class="num" id="num5">5</button>
+                <button type="button" class="num" id="num6">6</button>
+                <button type="button" class="op" id="opMinus">-</button>
+            </div>
+            <div class="calcrow">
+                <button type="button" class="op" id="opSign">±</button>
+                <button type="button" class="num" id="num1">1</button>
+                <button type="button" class="num" id="num2">2</button>
+                <button type="button" class="num" id="num3">3</button>
+                <button type="button" class="op" id="opPlus">+</button>
+            </div>
+            <div class="calcrow">
+                <button type="button" class="num" id="num0">0</button>
+                <button type="button" class="dot" id="dot">.</button>
+                <button type="button" class="push" id="push">PUSH</button>
+            </div>
+        </div>
+    </body>
+</html>
+
+

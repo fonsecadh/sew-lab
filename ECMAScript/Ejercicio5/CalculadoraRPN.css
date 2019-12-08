@@ -1,0 +1,219 @@
+/* Fonts and text */
+
+/*
+ * a=0; b=0; c=1;
+ * Specificity: 1
+ */
+ h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-stretch: expanded;
+ }
+
+ /* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h1 {
+    font-size: 2em;
+} 
+
+/*
+ * a=0; b=0; c=1;
+ * Specificity: 1
+ */
+ p {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-stretch: expanded;
+    font-size: 1.25em;
+ }
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+button {
+    font-family: sans-serif;
+    font-size: 1.25em;
+}
+
+/* 
+ * a=0; b=1; c=0;
+ * Specificity: 10 
+ */
+.result {
+    font-family: sans-serif;
+    font-size: 1.25em;
+}
+
+
+
+/* Color */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+ h1, p {
+    color: #bb841a;
+    background-color: #1b1b23;
+}
+
+
+/* 
+ * a=0; b=1; c=0;
+ * Specificity: 10 
+ */
+.reg, .mode {
+    color: #bb841a;    
+    background-color: #5f0000;
+}
+
+/* 
+ * a=0; b=2; c=0;
+ * Specificity: 20 
+ */
+.reg:hover, .mode:hover {
+    color: #5f0000;
+    background-color: #bb841a;    
+}
+
+/* 
+ * a=0; b=1; c=0;
+ * Specificity: 10 
+ */
+.op, .pi {
+    color: #1b1b23;
+    background-color: #bb841a;    
+}
+
+/* 
+ * a=0; b=2; c=0;
+ * Specificity: 20 
+ */
+.op:hover, .pi:hover {
+    color: #bb841a;    
+    background-color: #1b1b23;
+}
+
+/* 
+ * a=0; b=1; c=0;
+ * Specificity: 10 
+ */
+.num, .dot, .push {    
+    color: #1b1b23;
+    background-color: #858596;
+}
+
+/* 
+ * a=0; b=2; c=0;
+ * Specificity: 20 
+ */
+.num:hover, .dot:hover, .push:hover {    
+    color: #858596;
+    background-color: #1b1b23;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+body {
+    background-color: #1b1b23;
+}
+
+/* 
+ * a=0; b=1; c=1;
+ * Specificity: 11 
+ */
+ .result input {
+    color: #1b1b23;
+    background-color: #bb841a;    
+}
+
+
+
+/* Padding and margin */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+ h1 {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    text-justify: auto;
+}
+
+/* 
+ * a=0; b=1; c=0;
+ * Specificity: 10 
+ */
+ .calculator {
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+/* 
+ * a=0; b=1; c=0;
+ * Specificity: 10 
+ */
+ .calrow {
+    text-align: center;
+}
+
+/* 
+ * a=0; b=1; c=0;
+ * Specificity: 10 
+ */
+ .result {
+    text-align: center;
+    margin: 0.15em 0.25em;
+    padding: 1.1em;
+}
+
+/* 
+ * a=0; b=1; c=1;
+ * Specificity: 11 
+ */
+ .result input {
+    border: none;
+    margin: 0.15em 0.25em;
+    padding: 1em;
+    text-decoration: none;
+    display: inline-block;
+    width: 32.5em;
+}
+
+
+
+/* Buttons */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+ button {
+    border: none;
+    margin: 0.15em 0.25em;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    width: 4em;
+}
+
+/* 
+ * a=0; b=1; c=0;
+ * Specificity: 10 
+ */
+ .push {
+    width: 13.5em;
+}
+
+

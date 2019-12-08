@@ -150,7 +150,7 @@ class ScientificCalculator extends BasicCalculator {
         super();
 
         // Calculator mode
-        this.mode == "DEG" // Can be DEG (Degrees) or RAD (Radians)
+        this.mode = "DEG" // Can be DEG (Degrees) or RAD (Radians)
 
         // We add the new listeners to the scientific calculator
         this.addMoreOperatorListeners();
@@ -193,7 +193,7 @@ class ScientificCalculator extends BasicCalculator {
             _this.checkStatus(); // We check the status of the calculator
             _this.evalCurrentExpression(); // Evaluate current expression in the text field
             if (_this.calcStatus !== "ERROR") {
-                _this.resultTxtField.value = String(Math.pow(parseInt(_this.resultTxtField.value), 2));
+                _this.resultTxtField.value = String(Math.pow(parseFloat(_this.resultTxtField.value), 2));
             }
         });
 
@@ -207,9 +207,9 @@ class ScientificCalculator extends BasicCalculator {
             _this.evalCurrentExpression(); // Evaluate current expression in the text field
             if (_this.calcStatus !== "ERROR") {
                 if (_this.mode === "DEG") {
-                    _this.resultTxtField.value = String(Math.sin(_this.toRadians(parseInt(_this.resultTxtField.value))));
+                    _this.resultTxtField.value = String(Math.sin(_this.toRadians(parseFloat(_this.resultTxtField.value))));
                 } else {
-                    _this.resultTxtField.value = String(Math.sin(parseInt(_this.resultTxtField.value)));
+                    _this.resultTxtField.value = String(Math.sin(parseFloat(_this.resultTxtField.value)));
                 }
             }
         });
@@ -219,9 +219,9 @@ class ScientificCalculator extends BasicCalculator {
             _this.evalCurrentExpression(); // Evaluate current expression in the text field
             if (_this.calcStatus !== "ERROR") {
                 if (_this.mode === "DEG") {
-                    _this.resultTxtField.value = String(Math.cos(_this.toRadians(parseInt(_this.resultTxtField.value))));
+                    _this.resultTxtField.value = String(Math.cos(_this.toRadians(parseFloat(_this.resultTxtField.value))));
                 } else {
-                    _this.resultTxtField.value = String(_this.toRadians(parseInt(_this.resultTxtField.value)));
+                    _this.resultTxtField.value = String(_this.toRadians(parseFloat(_this.resultTxtField.value)));
                 }
             }
         });
@@ -231,9 +231,9 @@ class ScientificCalculator extends BasicCalculator {
             _this.evalCurrentExpression(); // Evaluate current expression in the text field
             if (_this.calcStatus !== "ERROR") {
                 if (_this.mode === "DEG") {
-                    _this.resultTxtField.value = String(Math.tan(_this.toRadians(parseInt(_this.resultTxtField.value))));
+                    _this.resultTxtField.value = String(Math.tan(_this.toRadians(parseFloat(_this.resultTxtField.value))));
                 } else {
-                    _this.resultTxtField.value = String(Math.tan(parseInt(_this.resultTxtField.value)));
+                    _this.resultTxtField.value = String(Math.tan(parseFloat(_this.resultTxtField.value)));
                 }
             }
         });
@@ -242,7 +242,7 @@ class ScientificCalculator extends BasicCalculator {
             _this.checkStatus(); // We check the status of the calculator
             _this.evalCurrentExpression(); // Evaluate current expression in the text field
             if (_this.calcStatus !== "ERROR") {
-                _this.resultTxtField.value = String(Math.sqrt(parseInt(_this.resultTxtField.value)));
+                _this.resultTxtField.value = String(Math.sqrt(parseFloat(_this.resultTxtField.value)));
             }
         });
 
@@ -250,7 +250,7 @@ class ScientificCalculator extends BasicCalculator {
             _this.checkStatus(); // We check the status of the calculator
             _this.evalCurrentExpression(); // Evaluate current expression in the text field
             if (_this.calcStatus !== "ERROR") {
-                _this.resultTxtField.value = String(Math.pow(10, parseInt(_this.resultTxtField.value)));
+                _this.resultTxtField.value = String(Math.pow(10, parseFloat(_this.resultTxtField.value)));
             }
         });
 
@@ -258,7 +258,7 @@ class ScientificCalculator extends BasicCalculator {
             _this.checkStatus(); // We check the status of the calculator
             _this.evalCurrentExpression(); // Evaluate current expression in the text field
             if (_this.calcStatus !== "ERROR") {
-                _this.resultTxtField.value = String(Math.log(parseInt(_this.resultTxtField.value)));
+                _this.resultTxtField.value = String(Math.log(parseFloat(_this.resultTxtField.value)));
             }
         });
 
@@ -282,7 +282,7 @@ class ScientificCalculator extends BasicCalculator {
             _this.checkStatus(); // We check the status of the calculator
             _this.evalCurrentExpression(); // Evaluate current expression in the text field
             if (_this.calcStatus !== "ERROR") {
-                let f = _this.factorial(parseInt(_this.resultTxtField.value));
+                let f = _this.factorial(parseFloat(_this.resultTxtField.value));
                 _this.resultTxtField.value = String(f);
             }
         });
@@ -291,7 +291,7 @@ class ScientificCalculator extends BasicCalculator {
             _this.checkStatus(); // We check the status of the calculator
             _this.evalCurrentExpression(); // Evaluate current expression in the text field
             if (_this.calcStatus !== "ERROR") {
-                let result = - parseInt(_this.resultTxtField.value);
+                let result = - parseFloat(_this.resultTxtField.value);
                 _this.resultTxtField.value = String(result);
             }
         });
