@@ -1,0 +1,145 @@
+/* Fonts and text */
+
+/*
+ * a=0; b=0; c=1;
+ * Specificity: 1
+ */
+ h1,h2,h3 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-stretch: expanded;
+    font-style: italic;
+ }
+
+ /* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h1 {
+    font-size: 2em;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h2 {
+    font-size: 1.75em;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h3 {
+    font-size: 1.5em;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+p {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+ table, ul {
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
+
+
+
+/* Color */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+ h1 {
+    color: #858596;
+    background-color: #1b1b23;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+h2,h3 {
+    color: #bb841a;
+    background-color: #1b1b23;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+p, table, ul, li, img {
+    color: #858596;
+    background-color: #1b1b23;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+body {
+    background-color: #1b1b23;
+}
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+ button {
+    color: #bb841a;
+    background-color: #1b1b23;    
+    border-color: #bb841a;
+}
+
+/* 
+ * a=0; b=1; c=1;
+ * Specificity: 11
+ */
+ button:hover {
+    color: #1b1b23;
+    background-color: #bb841a;    
+    border-color: #1b1b23;
+}
+
+
+
+/* Buttons */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+ button {
+    margin: 1.15em 1.25em;
+    padding: 1em;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    height: 8em;
+    width: 8em;
+}
+
+
+
+/* Map */
+
+/* 
+ * a=0; b=0; c=1;
+ * Specificity: 1 
+ */
+ #map-canvas {
+    height: 500px;
+    width: 100%;
+}
+
