@@ -57,6 +57,7 @@ p {
 
 /* Color */
 
+/*
 /* 
  * a=0; b=0; c=1;
  * Specificity: 1 
@@ -79,7 +80,7 @@ h2,h3 {
  * a=0; b=0; c=1;
  * Specificity: 1 
  */
-p, table, ul, li, img {
+p, table, ul, li {
     color: #858596;
     background-color: #1b1b23;
 }
@@ -135,13 +136,12 @@ body {
 /* Map */
 
 /* 
- * a=0; b=0; c=1;
- * Specificity: 1 
+ * a=1; b=0; c=0;
+ * Specificity: 100 
  */
  #map-canvas {
     height: 40em;
     width: 60em;
-    overflow: hidden;
     float: left;
     border: thin solid #333;
 }

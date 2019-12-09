@@ -135,8 +135,8 @@ body {
 /* Map */
 
 /* 
- * a=0; b=0; c=1;
- * Specificity: 1 
+ * a=1; b=0; c=0;
+ * Specificity: 100 
  */
  #map-canvas {
     height: 500px;
